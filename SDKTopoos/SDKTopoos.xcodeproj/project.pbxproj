@@ -1,0 +1,1439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1910B56E18EBE9FD007C5157 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B56318EBE9FD007C5157 /* NSObject+SBJSON.m */; };
+		1910B56F18EBE9FD007C5157 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B56518EBE9FD007C5157 /* NSString+SBJSON.m */; };
+		1910B57018EBE9FD007C5157 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B56718EBE9FD007C5157 /* SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1910B57118EBE9FD007C5157 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B56918EBE9FD007C5157 /* SBJsonBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1910B57218EBE9FD007C5157 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B56B18EBE9FD007C5157 /* SBJsonParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1910B57318EBE9FD007C5157 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B56D18EBE9FD007C5157 /* SBJsonWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1910B86E18EBFE47007C5157 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B79418EBFE47007C5157 /* Constants.m */; };
+		1910B86F18EBFE47007C5157 /* TOS_AccessTokenOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B79618EBFE47007C5157 /* TOS_AccessTokenOAuth.m */; };
+		1910B87018EBFE47007C5157 /* TOSAccessCaller.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B79918EBFE47007C5157 /* TOSAccessCaller.m */; };
+		1910B87118EBFE47007C5157 /* TOSAccessOp.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B79C18EBFE47007C5157 /* TOSAccessOp.m */; };
+		1910B87218EBFE47007C5157 /* TOSAccessOpCheckinAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B79E18EBFE47007C5157 /* TOSAccessOpCheckinAdd.m */; };
+		1910B87318EBFE47007C5157 /* TOSAccessOpCheckinGet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7A018EBFE47007C5157 /* TOSAccessOpCheckinGet.m */; };
+		1910B87418EBFE47007C5157 /* TOSAccessOpCheckinGet_Last.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7A218EBFE47007C5157 /* TOSAccessOpCheckinGet_Last.m */; };
+		1910B87518EBFE47007C5157 /* TOSAccessOpCheckinGet_Where.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7A418EBFE47007C5157 /* TOSAccessOpCheckinGet_Where.m */; };
+		1910B87618EBFE47007C5157 /* TOSAccessOpExportLayerTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7A618EBFE47007C5157 /* TOSAccessOpExportLayerTrack.m */; };
+		1910B87718EBFE47007C5157 /* TOSAccessOpImageUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7A818EBFE47007C5157 /* TOSAccessOpImageUpload.m */; };
+		1910B87818EBFE47007C5157 /* TOSAccessOpPOISAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7AA18EBFE47007C5157 /* TOSAccessOpPOISAdd.m */; };
+		1910B87918EBFE47007C5157 /* TOSAccessOpPOISCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7AC18EBFE47007C5157 /* TOSAccessOpPOISCategories.m */; };
+		1910B87A18EBFE47007C5157 /* TOSAccessOpPOISCategoriesAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7AE18EBFE47007C5157 /* TOSAccessOpPOISCategoriesAdd.m */; };
+		1910B87B18EBFE47007C5157 /* TOSAccessOpPOISCategoriesDelete.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7B018EBFE47007C5157 /* TOSAccessOpPOISCategoriesDelete.m */; };
+		1910B87C18EBFE47007C5157 /* TOSAccessOpPOISCategoriesUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7B218EBFE47007C5157 /* TOSAccessOpPOISCategoriesUpdate.m */; };
+		1910B87D18EBFE47007C5157 /* TOSAccessOpPOISDelete.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7B418EBFE47007C5157 /* TOSAccessOpPOISDelete.m */; };
+		1910B87E18EBFE47007C5157 /* TOSAccessOpPOISGet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7B618EBFE47007C5157 /* TOSAccessOpPOISGet.m */; };
+		1910B87F18EBFE47007C5157 /* TOSAccessOpPOISGet_near.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7B818EBFE47007C5157 /* TOSAccessOpPOISGet_near.m */; };
+		1910B88018EBFE47007C5157 /* TOSAccessOpPOISGet_where.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7BA18EBFE47007C5157 /* TOSAccessOpPOISGet_where.m */; };
+		1910B88118EBFE47007C5157 /* TOSAccessOpPOISUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7BC18EBFE47007C5157 /* TOSAccessOpPOISUpdate.m */; };
+		1910B88218EBFE47007C5157 /* TOSAccessOpPOISWarning.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7BE18EBFE47007C5157 /* TOSAccessOpPOISWarning.m */; };
+		1910B88318EBFE47007C5157 /* TOSAccessOpPOISWarningAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7C018EBFE47007C5157 /* TOSAccessOpPOISWarningAdd.m */; };
+		1910B88418EBFE47007C5157 /* TOSAccessOpPOISWarningDelete.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7C218EBFE47007C5157 /* TOSAccessOpPOISWarningDelete.m */; };
+		1910B88618EBFE47007C5157 /* TOSAccessOpPositionsAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7C518EBFE47007C5157 /* TOSAccessOpPositionsAdd.m */; };
+		1910B88718EBFE47007C5157 /* TOSAccessOpPositionsGet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7C718EBFE47007C5157 /* TOSAccessOpPositionsGet.m */; };
+		1910B88818EBFE47007C5157 /* TOSAccessOpPositionsGet_Between.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7C918EBFE47007C5157 /* TOSAccessOpPositionsGet_Between.m */; };
+		1910B88918EBFE47007C5157 /* TOSAccessOpResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7CB18EBFE47007C5157 /* TOSAccessOpResource.m */; };
+		1910B88A18EBFE47007C5157 /* TOSAccessOpResourcesGeocode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7CD18EBFE47007C5157 /* TOSAccessOpResourcesGeocode.m */; };
+		1910B88B18EBFE47007C5157 /* TOSAccessOpResourcesGet_Polygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7CF18EBFE47007C5157 /* TOSAccessOpResourcesGet_Polygon.m */; };
+		1910B88C18EBFE47007C5157 /* TOSAccessOpRulesAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7D118EBFE47007C5157 /* TOSAccessOpRulesAdd.m */; };
+		1910B88D18EBFE47007C5157 /* TOSAccessOpTrackAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7D318EBFE47007C5157 /* TOSAccessOpTrackAdd.m */; };
+		1910B88E18EBFE47007C5157 /* TOSAccessOpTrackGet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7D518EBFE47007C5157 /* TOSAccessOpTrackGet.m */; };
+		1910B88F18EBFE47007C5157 /* TOSAccessOpTrackGetLast.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7D718EBFE47007C5157 /* TOSAccessOpTrackGetLast.m */; };
+		1910B89018EBFE47007C5157 /* TOSAccessOpUsersNear.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7D918EBFE47007C5157 /* TOSAccessOpUsersNear.m */; };
+		1910B89118EBFE47007C5157 /* TOSAccessOpUsersUSRShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7DB18EBFE47007C5157 /* TOSAccessOpUsersUSRShow.m */; };
+		1910B89218EBFE47007C5157 /* TOSAccessOpWebmap.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7DD18EBFE47007C5157 /* TOSAccessOpWebmap.m */; };
+		1910B89318EBFE47007C5157 /* TOSAccessRes.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7E018EBFE47007C5157 /* TOSAccessRes.m */; };
+		1910B89418EBFE47007C5157 /* TOSAccessResCheckin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7E218EBFE47007C5157 /* TOSAccessResCheckin.m */; };
+		1910B89518EBFE47007C5157 /* TOSAccessResCheckinCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7E418EBFE47007C5157 /* TOSAccessResCheckinCollection.m */; };
+		1910B89618EBFE47007C5157 /* TOSAccessResCheckinCollectiosn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7E518EBFE47007C5157 /* TOSAccessResCheckinCollectiosn.m */; };
+		1910B89718EBFE47007C5157 /* TOSAccessResGeneric.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7E818EBFE47007C5157 /* TOSAccessResGeneric.m */; };
+		1910B89818EBFE47007C5157 /* TOSAccessResGeocoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7EA18EBFE47007C5157 /* TOSAccessResGeocoding.m */; };
+		1910B89918EBFE47007C5157 /* TOSAccessResImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7EC18EBFE47007C5157 /* TOSAccessResImage.m */; };
+		1910B89A18EBFE47007C5157 /* TOSAccessResPOI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7EE18EBFE47007C5157 /* TOSAccessResPOI.m */; };
+		1910B89B18EBFE47007C5157 /* TOSAccessResPOICategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7F018EBFE47007C5157 /* TOSAccessResPOICategory.m */; };
+		1910B89C18EBFE47007C5157 /* TOSAccessResPOICategoryCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7F218EBFE47007C5157 /* TOSAccessResPOICategoryCollection.m */; };
+		1910B89D18EBFE47007C5157 /* TOSAccessResPOICollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7F418EBFE47007C5157 /* TOSAccessResPOICollection.m */; };
+		1910B89E18EBFE47007C5157 /* TOSAccessResPOIWarning.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7F618EBFE47007C5157 /* TOSAccessResPOIWarning.m */; };
+		1910B89F18EBFE47007C5157 /* TOSAccessResPOIWarningCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7F818EBFE47007C5157 /* TOSAccessResPOIWarningCollection.m */; };
+		1910B8A018EBFE47007C5157 /* TOSAccessResPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7FA18EBFE47007C5157 /* TOSAccessResPolygon.m */; };
+		1910B8A118EBFE47007C5157 /* TOSAccessResPositions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7FC18EBFE47007C5157 /* TOSAccessResPositions.m */; };
+		1910B8A218EBFE47007C5157 /* TOSAccessResPositionsCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B7FE18EBFE47007C5157 /* TOSAccessResPositionsCollection.m */; };
+		1910B8A318EBFE47007C5157 /* TOSAccessResRules.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B80018EBFE47007C5157 /* TOSAccessResRules.m */; };
+		1910B8A418EBFE47007C5157 /* TOSAccessResTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B80218EBFE47007C5157 /* TOSAccessResTrack.m */; };
+		1910B8A518EBFE47007C5157 /* TOSAccessResTrackExport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B80418EBFE47007C5157 /* TOSAccessResTrackExport.m */; };
+		1910B8A618EBFE47007C5157 /* TOSAccessResTrackResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B80618EBFE47007C5157 /* TOSAccessResTrackResource.m */; };
+		1910B8A718EBFE47007C5157 /* TOSAccessResUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B80818EBFE47007C5157 /* TOSAccessResUser.m */; };
+		1910B8A818EBFE47007C5157 /* TOSAccessResUsersNear.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B80A18EBFE47007C5157 /* TOSAccessResUsersNear.m */; };
+		1910B8A918EBFE47007C5157 /* TOS_CheckinOps.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B80D18EBFE47007C5157 /* TOS_CheckinOps.m */; };
+		1910B8AA18EBFE47007C5157 /* TOS_ExportOps.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B81018EBFE47007C5157 /* TOS_ExportOps.m */; };
+		1910B8AB18EBFE47007C5157 /* TOS_ExportTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B81218EBFE47007C5157 /* TOS_ExportTranslator.m */; };
+		1910B8AC18EBFE47007C5157 /* TOS_ImagesOps.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B81518EBFE47007C5157 /* TOS_ImagesOps.m */; };
+		1910B8AD18EBFE47007C5157 /* TOS_Accreditation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B81818EBFE47007C5157 /* TOS_Accreditation.m */; };
+		1910B8AE18EBFE47007C5157 /* TOS_Address.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B81A18EBFE47007C5157 /* TOS_Address.m */; };
+		1910B8AF18EBFE47007C5157 /* TOS_Checkin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B81C18EBFE47007C5157 /* TOS_Checkin.m */; };
+		1910B8B018EBFE47007C5157 /* TOS_CheckinCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B81E18EBFE47007C5157 /* TOS_CheckinCollection.m */; };
+		1910B8B118EBFE47007C5157 /* TOS_GeocodingData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B82018EBFE47007C5157 /* TOS_GeocodingData.m */; };
+		1910B8B218EBFE47007C5157 /* TOS_GeoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B82218EBFE47007C5157 /* TOS_GeoData.m */; };
+		1910B8B318EBFE47007C5157 /* TOS_Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B82418EBFE47007C5157 /* TOS_Image.m */; };
+		1910B8B418EBFE47007C5157 /* TOS_Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B82618EBFE47007C5157 /* TOS_Location.m */; };
+		1910B8B518EBFE47007C5157 /* TOS_POI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B82818EBFE47007C5157 /* TOS_POI.m */; };
+		1910B8B618EBFE47007C5157 /* TOS_POICategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B82A18EBFE47007C5157 /* TOS_POICategory.m */; };
+		1910B8B718EBFE47007C5157 /* TOS_POICategoryCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B82C18EBFE47007C5157 /* TOS_POICategoryCollection.m */; };
+		1910B8B818EBFE47007C5157 /* TOS_POICollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B82E18EBFE47007C5157 /* TOS_POICollection.m */; };
+		1910B8B918EBFE47007C5157 /* TOS_POIDataWarning.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B83018EBFE47007C5157 /* TOS_POIDataWarning.m */; };
+		1910B8BA18EBFE47007C5157 /* TOS_POIWarning.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B83218EBFE47007C5157 /* TOS_POIWarning.m */; };
+		1910B8BB18EBFE47007C5157 /* TOS_POIWarning_Count.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B83418EBFE47007C5157 /* TOS_POIWarning_Count.m */; };
+		1910B8BC18EBFE47007C5157 /* TOS_POIWarningData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B83618EBFE47007C5157 /* TOS_POIWarningData.m */; };
+		1910B8BD18EBFE47007C5157 /* TOS_Position.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B83818EBFE47007C5157 /* TOS_Position.m */; };
+		1910B8BE18EBFE47007C5157 /* TOS_PositionCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B83A18EBFE47007C5157 /* TOS_PositionCollection.m */; };
+		1910B8BF18EBFE47007C5157 /* TOS_PositionType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B83C18EBFE47007C5157 /* TOS_PositionType.m */; };
+		1910B8C018EBFE47007C5157 /* TOS_Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B83E18EBFE47007C5157 /* TOS_Profile.m */; };
+		1910B8C118EBFE47007C5157 /* TOS_Rule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B84018EBFE47007C5157 /* TOS_Rule.m */; };
+		1910B8C218EBFE47007C5157 /* TOS_Track.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B84218EBFE47007C5157 /* TOS_Track.m */; };
+		1910B8C318EBFE47007C5157 /* TOS_TrackResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B84418EBFE47007C5157 /* TOS_TrackResource.m */; };
+		1910B8C418EBFE47007C5157 /* TOS_User.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B84618EBFE47007C5157 /* TOS_User.m */; };
+		1910B8C518EBFE47007C5157 /* TOS_UserIdPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B84818EBFE47007C5157 /* TOS_UserIdPosition.m */; };
+		1910B8C618EBFE47007C5157 /* TOS_UserPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B84A18EBFE47007C5157 /* TOS_UserPosition.m */; };
+		1910B8C718EBFE47007C5157 /* TOS_UsersNear.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B84C18EBFE47007C5157 /* TOS_UsersNear.m */; };
+		1910B8C818EBFE47007C5157 /* TOS_ViewportType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B84E18EBFE47007C5157 /* TOS_ViewportType.m */; };
+		1910B8C918EBFE47007C5157 /* TOS_VisibleDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B85018EBFE47007C5157 /* TOS_VisibleDevice.m */; };
+		1910B8CA18EBFE47007C5157 /* TOS_POICategoriesOps.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B85318EBFE47007C5157 /* TOS_POICategoriesOps.m */; };
+		1910B8CB18EBFE47007C5157 /* TOS_POICategoriesTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B85518EBFE47007C5157 /* TOS_POICategoriesTranslator.m */; };
+		1910B8CC18EBFE47007C5157 /* TOS_POIOps.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B85818EBFE47007C5157 /* TOS_POIOps.m */; };
+		1910B8CD18EBFE47007C5157 /* TOS_POITranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B85A18EBFE47007C5157 /* TOS_POITranslator.m */; };
+		1910B8CE18EBFE47007C5157 /* TOS_PositionsOps.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B85D18EBFE47007C5157 /* TOS_PositionsOps.m */; };
+		1910B8CF18EBFE47007C5157 /* TOS_PositionsTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B85F18EBFE47007C5157 /* TOS_PositionsTranslator.m */; };
+		1910B8D018EBFE47007C5157 /* TOS_ResourcesOps.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B86218EBFE47007C5157 /* TOS_ResourcesOps.m */; };
+		1910B8D118EBFE47007C5157 /* TOS_RulesOps.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B86518EBFE47007C5157 /* TOS_RulesOps.m */; };
+		1910B8D218EBFE47007C5157 /* TOS_RulesTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B86718EBFE47007C5157 /* TOS_RulesTranslator.m */; };
+		1910B8D318EBFE47007C5157 /* TOS_TrackOps.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B86A18EBFE47007C5157 /* TOS_TrackOps.m */; };
+		1910B8D418EBFE47007C5157 /* TOS_UsersOps.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B86D18EBFE47007C5157 /* TOS_UsersOps.m */; };
+		1910B8DA18EBFF92007C5157 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B8D618EBFF92007C5157 /* LoginController.m */; };
+		1910B8DB18EBFF92007C5157 /* LoginTopoosController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B8D918EBFF92007C5157 /* LoginTopoosController.m */; };
+		1910B8E218EBFFAB007C5157 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1910B8E118EBFFAB007C5157 /* CoreFoundation.framework */; };
+		1910B8E818EBFFAB007C5157 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1910B8E618EBFFAB007C5157 /* InfoPlist.strings */; };
+		1910B8ED18EBFFB8007C5157 /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1910B8D718EBFF92007C5157 /* LoginController.xib */; };
+		1910B8EE18EBFFF5007C5157 /* LoginController.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B8D518EBFF92007C5157 /* LoginController.h */; };
+		1910B8EF18EBFFFB007C5157 /* LoginTopoosController.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B8D818EBFF92007C5157 /* LoginTopoosController.h */; };
+		1910B8F018EC010C007C5157 /* Constants.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B79318EBFE47007C5157 /* Constants.h */; };
+		1910B8F218EC010C007C5157 /* TOS_AccessTokenOAuth.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B79518EBFE47007C5157 /* TOS_AccessTokenOAuth.h */; };
+		1910B8F418EC01D5007C5157 /* TOSAccessCaller.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B79818EBFE47007C5157 /* TOSAccessCaller.h */; };
+		1910B8F518EC01D5007C5157 /* TOSAccessOp.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B79B18EBFE47007C5157 /* TOSAccessOp.h */; };
+		1910B8F618EC01D5007C5157 /* TOSAccessOpCheckinAdd.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B79D18EBFE47007C5157 /* TOSAccessOpCheckinAdd.h */; };
+		1910B8F718EC01D5007C5157 /* TOSAccessOpCheckinGet.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B79F18EBFE47007C5157 /* TOSAccessOpCheckinGet.h */; };
+		1910B8F818EC01D5007C5157 /* TOSAccessOpCheckinGet_Last.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7A118EBFE47007C5157 /* TOSAccessOpCheckinGet_Last.h */; };
+		1910B8F918EC01D5007C5157 /* TOSAccessOpCheckinGet_Where.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7A318EBFE47007C5157 /* TOSAccessOpCheckinGet_Where.h */; };
+		1910B8FA18EC01D5007C5157 /* TOSAccessOpExportLayerTrack.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7A518EBFE47007C5157 /* TOSAccessOpExportLayerTrack.h */; };
+		1910B8FB18EC01D5007C5157 /* TOSAccessOpImageUpload.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7A718EBFE47007C5157 /* TOSAccessOpImageUpload.h */; };
+		1910B8FC18EC01D5007C5157 /* TOSAccessOpPOISAdd.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7A918EBFE47007C5157 /* TOSAccessOpPOISAdd.h */; };
+		1910B8FD18EC01D5007C5157 /* TOSAccessOpPOISCategories.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7AB18EBFE47007C5157 /* TOSAccessOpPOISCategories.h */; };
+		1910B8FE18EC01D5007C5157 /* TOSAccessOpPOISCategoriesAdd.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7AD18EBFE47007C5157 /* TOSAccessOpPOISCategoriesAdd.h */; };
+		1910B8FF18EC01D5007C5157 /* TOSAccessOpPOISCategoriesDelete.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7AF18EBFE47007C5157 /* TOSAccessOpPOISCategoriesDelete.h */; };
+		1910B90018EC01D5007C5157 /* TOSAccessOpPOISCategoriesUpdate.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7B118EBFE47007C5157 /* TOSAccessOpPOISCategoriesUpdate.h */; };
+		1910B90118EC01D5007C5157 /* TOSAccessOpPOISDelete.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7B318EBFE47007C5157 /* TOSAccessOpPOISDelete.h */; };
+		1910B90218EC01D5007C5157 /* TOSAccessOpPOISGet.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7B518EBFE47007C5157 /* TOSAccessOpPOISGet.h */; };
+		1910B90318EC01D5007C5157 /* TOSAccessOpPOISGet_near.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7B718EBFE47007C5157 /* TOSAccessOpPOISGet_near.h */; };
+		1910B90418EC01D5007C5157 /* TOSAccessOpPOISGet_where.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7B918EBFE47007C5157 /* TOSAccessOpPOISGet_where.h */; };
+		1910B90518EC01D5007C5157 /* TOSAccessOpPOISUpdate.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7BB18EBFE47007C5157 /* TOSAccessOpPOISUpdate.h */; };
+		1910B90618EC01D5007C5157 /* TOSAccessOpPOISWarning.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7BD18EBFE47007C5157 /* TOSAccessOpPOISWarning.h */; };
+		1910B90718EC01D5007C5157 /* TOSAccessOpPOISWarningAdd.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7BF18EBFE47007C5157 /* TOSAccessOpPOISWarningAdd.h */; };
+		1910B90818EC01D5007C5157 /* TOSAccessOpPOISWarningDelete.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7C118EBFE47007C5157 /* TOSAccessOpPOISWarningDelete.h */; };
+		1910B90918EC01D5007C5157 /* TOSAccessOpPositionsAdd.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7C418EBFE47007C5157 /* TOSAccessOpPositionsAdd.h */; };
+		1910B90A18EC01D5007C5157 /* TOSAccessOpPositionsGet.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7C618EBFE47007C5157 /* TOSAccessOpPositionsGet.h */; };
+		1910B90B18EC01D5007C5157 /* TOSAccessOpPositionsGet_Between.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7C818EBFE47007C5157 /* TOSAccessOpPositionsGet_Between.h */; };
+		1910B90C18EC01D5007C5157 /* TOSAccessOpResource.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7CA18EBFE47007C5157 /* TOSAccessOpResource.h */; };
+		1910B90D18EC01D5007C5157 /* TOSAccessOpResourcesGeocode.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7CC18EBFE47007C5157 /* TOSAccessOpResourcesGeocode.h */; };
+		1910B90E18EC01D5007C5157 /* TOSAccessOpResourcesGet_Polygon.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7CE18EBFE47007C5157 /* TOSAccessOpResourcesGet_Polygon.h */; };
+		1910B90F18EC01D5007C5157 /* TOSAccessOpRulesAdd.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7D018EBFE47007C5157 /* TOSAccessOpRulesAdd.h */; };
+		1910B91018EC01D5007C5157 /* TOSAccessOpTrackAdd.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7D218EBFE47007C5157 /* TOSAccessOpTrackAdd.h */; };
+		1910B91118EC01D5007C5157 /* TOSAccessOpTrackGet.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7D418EBFE47007C5157 /* TOSAccessOpTrackGet.h */; };
+		1910B91218EC01D5007C5157 /* TOSAccessOpTrackGetLast.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7D618EBFE47007C5157 /* TOSAccessOpTrackGetLast.h */; };
+		1910B91318EC01D5007C5157 /* TOSAccessOpUsersNear.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7D818EBFE47007C5157 /* TOSAccessOpUsersNear.h */; };
+		1910B91418EC01D5007C5157 /* TOSAccessOpUsersUSRShow.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7DA18EBFE47007C5157 /* TOSAccessOpUsersUSRShow.h */; };
+		1910B91518EC01D5007C5157 /* TOSAccessOpWebmap.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7DC18EBFE47007C5157 /* TOSAccessOpWebmap.h */; };
+		1910B91618EC01D5007C5157 /* TOSAccessRes.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7DF18EBFE47007C5157 /* TOSAccessRes.h */; };
+		1910B91718EC01D5007C5157 /* TOSAccessResCheckin.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7E118EBFE47007C5157 /* TOSAccessResCheckin.h */; };
+		1910B91818EC01D5007C5157 /* TOSAccessResCheckinCollection.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7E318EBFE47007C5157 /* TOSAccessResCheckinCollection.h */; };
+		1910B91918EC01D5007C5157 /* TOSAccessResCheckinCollectison.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7E618EBFE47007C5157 /* TOSAccessResCheckinCollectison.h */; };
+		1910B91A18EC01D5007C5157 /* TOSAccessResGeneric.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7E718EBFE47007C5157 /* TOSAccessResGeneric.h */; };
+		1910B91B18EC01D5007C5157 /* TOSAccessResGeocoding.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7E918EBFE47007C5157 /* TOSAccessResGeocoding.h */; };
+		1910B91C18EC01D5007C5157 /* TOSAccessResImage.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7EB18EBFE47007C5157 /* TOSAccessResImage.h */; };
+		1910B91D18EC01D5007C5157 /* TOSAccessResPOI.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7ED18EBFE47007C5157 /* TOSAccessResPOI.h */; };
+		1910B91E18EC01D5007C5157 /* TOSAccessResPOICategory.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7EF18EBFE47007C5157 /* TOSAccessResPOICategory.h */; };
+		1910B91F18EC01D5007C5157 /* TOSAccessResPOICategoryCollection.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7F118EBFE47007C5157 /* TOSAccessResPOICategoryCollection.h */; };
+		1910B92018EC01D5007C5157 /* TOSAccessResPOICollection.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7F318EBFE47007C5157 /* TOSAccessResPOICollection.h */; };
+		1910B92118EC01D5007C5157 /* TOSAccessResPOIWarning.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7F518EBFE47007C5157 /* TOSAccessResPOIWarning.h */; };
+		1910B92218EC01D5007C5157 /* TOSAccessResPOIWarningCollection.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7F718EBFE47007C5157 /* TOSAccessResPOIWarningCollection.h */; };
+		1910B92318EC01D5007C5157 /* TOSAccessResPolygon.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7F918EBFE47007C5157 /* TOSAccessResPolygon.h */; };
+		1910B92418EC01D5007C5157 /* TOSAccessResPositions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7FB18EBFE47007C5157 /* TOSAccessResPositions.h */; };
+		1910B92518EC01D5007C5157 /* TOSAccessResPositionsCollection.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7FD18EBFE47007C5157 /* TOSAccessResPositionsCollection.h */; };
+		1910B92618EC01D5007C5157 /* TOSAccessResRules.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7FF18EBFE47007C5157 /* TOSAccessResRules.h */; };
+		1910B92718EC01D5007C5157 /* TOSAccessResTrack.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B80118EBFE47007C5157 /* TOSAccessResTrack.h */; };
+		1910B92818EC01D5007C5157 /* TOSAccessResTrackExport.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B80318EBFE47007C5157 /* TOSAccessResTrackExport.h */; };
+		1910B92918EC01D5007C5157 /* TOSAccessResTrackResource.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B80518EBFE47007C5157 /* TOSAccessResTrackResource.h */; };
+		1910B92A18EC01D5007C5157 /* TOSAccessResUser.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B80718EBFE47007C5157 /* TOSAccessResUser.h */; };
+		1910B92B18EC01D5007C5157 /* TOSAccessResUsersNear.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B80918EBFE47007C5157 /* TOSAccessResUsersNear.h */; };
+		1910B92C18EC01D5007C5157 /* TOS_CheckinOps.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B80C18EBFE47007C5157 /* TOS_CheckinOps.h */; };
+		1910B92D18EC01D5007C5157 /* TOS_ExportOps.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B80F18EBFE47007C5157 /* TOS_ExportOps.h */; };
+		1910B92E18EC01D5007C5157 /* TOS_ExportTranslator.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B81118EBFE47007C5157 /* TOS_ExportTranslator.h */; };
+		1910B92F18EC01D5007C5157 /* TOS_ImagesOps.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B81418EBFE47007C5157 /* TOS_ImagesOps.h */; };
+		1910B93018EC01D5007C5157 /* TOS_Accreditation.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B81718EBFE47007C5157 /* TOS_Accreditation.h */; };
+		1910B93118EC01D5007C5157 /* TOS_Address.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B81918EBFE47007C5157 /* TOS_Address.h */; };
+		1910B93218EC01D5007C5157 /* TOS_Checkin.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B81B18EBFE47007C5157 /* TOS_Checkin.h */; };
+		1910B93318EC01D5007C5157 /* TOS_CheckinCollection.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B81D18EBFE47007C5157 /* TOS_CheckinCollection.h */; };
+		1910B93418EC01D5007C5157 /* TOS_GeocodingData.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B81F18EBFE47007C5157 /* TOS_GeocodingData.h */; };
+		1910B93518EC01D5007C5157 /* TOS_GeoData.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B82118EBFE47007C5157 /* TOS_GeoData.h */; };
+		1910B93618EC01D5007C5157 /* TOS_Image.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B82318EBFE47007C5157 /* TOS_Image.h */; };
+		1910B93718EC01D5007C5157 /* TOS_Location.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B82518EBFE47007C5157 /* TOS_Location.h */; };
+		1910B93818EC01D5007C5157 /* TOS_POI.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B82718EBFE47007C5157 /* TOS_POI.h */; };
+		1910B93918EC01D5007C5157 /* TOS_POICategory.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B82918EBFE47007C5157 /* TOS_POICategory.h */; };
+		1910B93A18EC01D5007C5157 /* TOS_POICategoryCollection.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B82B18EBFE47007C5157 /* TOS_POICategoryCollection.h */; };
+		1910B93B18EC01D5007C5157 /* TOS_POICollection.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B82D18EBFE47007C5157 /* TOS_POICollection.h */; };
+		1910B93C18EC01D5007C5157 /* TOS_POIDataWarning.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B82F18EBFE47007C5157 /* TOS_POIDataWarning.h */; };
+		1910B93D18EC01D5007C5157 /* TOS_POIWarning.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B83118EBFE47007C5157 /* TOS_POIWarning.h */; };
+		1910B93E18EC01D5007C5157 /* TOS_POIWarning_Count.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B83318EBFE47007C5157 /* TOS_POIWarning_Count.h */; };
+		1910B93F18EC01D5007C5157 /* TOS_POIWarningData.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B83518EBFE47007C5157 /* TOS_POIWarningData.h */; };
+		1910B94018EC01D5007C5157 /* TOS_Position.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B83718EBFE47007C5157 /* TOS_Position.h */; };
+		1910B94118EC01D5007C5157 /* TOS_PositionCollection.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B83918EBFE47007C5157 /* TOS_PositionCollection.h */; };
+		1910B94218EC01D5007C5157 /* TOS_PositionType.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B83B18EBFE47007C5157 /* TOS_PositionType.h */; };
+		1910B94318EC01D5007C5157 /* TOS_Profile.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B83D18EBFE47007C5157 /* TOS_Profile.h */; };
+		1910B94418EC01D5007C5157 /* TOS_Rule.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B83F18EBFE47007C5157 /* TOS_Rule.h */; };
+		1910B94518EC01D5007C5157 /* TOS_Track.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B84118EBFE47007C5157 /* TOS_Track.h */; };
+		1910B94618EC01D5007C5157 /* TOS_TrackResource.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B84318EBFE47007C5157 /* TOS_TrackResource.h */; };
+		1910B94718EC01D5007C5157 /* TOS_User.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B84518EBFE47007C5157 /* TOS_User.h */; };
+		1910B94818EC01D5007C5157 /* TOS_UserIdPosition.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B84718EBFE47007C5157 /* TOS_UserIdPosition.h */; };
+		1910B94918EC01D5007C5157 /* TOS_UserPosition.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B84918EBFE47007C5157 /* TOS_UserPosition.h */; };
+		1910B94A18EC01D5007C5157 /* TOS_UsersNear.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B84B18EBFE47007C5157 /* TOS_UsersNear.h */; };
+		1910B94B18EC01D5007C5157 /* TOS_ViewportType.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B84D18EBFE47007C5157 /* TOS_ViewportType.h */; };
+		1910B94C18EC01D5007C5157 /* TOS_VisibleDevice.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B84F18EBFE47007C5157 /* TOS_VisibleDevice.h */; };
+		1910B94D18EC01D5007C5157 /* TOS_POICategoriesOps.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B85218EBFE47007C5157 /* TOS_POICategoriesOps.h */; };
+		1910B94E18EC01D5007C5157 /* TOS_POICategoriesTranslator.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B85418EBFE47007C5157 /* TOS_POICategoriesTranslator.h */; };
+		1910B94F18EC01D5007C5157 /* TOS_POIOps.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B85718EBFE47007C5157 /* TOS_POIOps.h */; };
+		1910B95018EC01D5007C5157 /* TOS_POITranslator.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B85918EBFE47007C5157 /* TOS_POITranslator.h */; };
+		1910B95118EC01D5007C5157 /* TOS_PositionsOps.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B85C18EBFE47007C5157 /* TOS_PositionsOps.h */; };
+		1910B95218EC01D5007C5157 /* TOS_PositionsTranslator.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B85E18EBFE47007C5157 /* TOS_PositionsTranslator.h */; };
+		1910B95318EC01D5007C5157 /* TOS_ResourcesOps.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B86118EBFE47007C5157 /* TOS_ResourcesOps.h */; };
+		1910B95418EC01D5007C5157 /* TOS_RulesOps.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B86418EBFE47007C5157 /* TOS_RulesOps.h */; };
+		1910B95518EC01D5007C5157 /* TOS_RulesTranslator.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B86618EBFE47007C5157 /* TOS_RulesTranslator.h */; };
+		1910B95618EC01D5007C5157 /* TOS_TrackOps.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B86918EBFE47007C5157 /* TOS_TrackOps.h */; };
+		1910B95718EC01D5007C5157 /* TOS_UsersOps.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B86C18EBFE47007C5157 /* TOS_UsersOps.h */; };
+		19CDAFF218EB1976001C381C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19CDAFF118EB1976001C381C /* Foundation.framework */; };
+		19CDB02F18EB19C2001C381C /* UrlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CDB02E18EB19C2001C381C /* UrlParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		19CDAFEC18EB1976001C381C /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = include;
+			dstSubfolderSpec = 16;
+			files = (
+				1910B8F418EC01D5007C5157 /* TOSAccessCaller.h in Copy Files */,
+				1910B8F518EC01D5007C5157 /* TOSAccessOp.h in Copy Files */,
+				1910B8F618EC01D5007C5157 /* TOSAccessOpCheckinAdd.h in Copy Files */,
+				1910B8F718EC01D5007C5157 /* TOSAccessOpCheckinGet.h in Copy Files */,
+				1910B8F818EC01D5007C5157 /* TOSAccessOpCheckinGet_Last.h in Copy Files */,
+				1910B8F918EC01D5007C5157 /* TOSAccessOpCheckinGet_Where.h in Copy Files */,
+				1910B8FA18EC01D5007C5157 /* TOSAccessOpExportLayerTrack.h in Copy Files */,
+				1910B8FB18EC01D5007C5157 /* TOSAccessOpImageUpload.h in Copy Files */,
+				1910B8FC18EC01D5007C5157 /* TOSAccessOpPOISAdd.h in Copy Files */,
+				1910B8FD18EC01D5007C5157 /* TOSAccessOpPOISCategories.h in Copy Files */,
+				1910B8FE18EC01D5007C5157 /* TOSAccessOpPOISCategoriesAdd.h in Copy Files */,
+				1910B8FF18EC01D5007C5157 /* TOSAccessOpPOISCategoriesDelete.h in Copy Files */,
+				1910B90018EC01D5007C5157 /* TOSAccessOpPOISCategoriesUpdate.h in Copy Files */,
+				1910B90118EC01D5007C5157 /* TOSAccessOpPOISDelete.h in Copy Files */,
+				1910B90218EC01D5007C5157 /* TOSAccessOpPOISGet.h in Copy Files */,
+				1910B90318EC01D5007C5157 /* TOSAccessOpPOISGet_near.h in Copy Files */,
+				1910B90418EC01D5007C5157 /* TOSAccessOpPOISGet_where.h in Copy Files */,
+				1910B90518EC01D5007C5157 /* TOSAccessOpPOISUpdate.h in Copy Files */,
+				1910B90618EC01D5007C5157 /* TOSAccessOpPOISWarning.h in Copy Files */,
+				1910B90718EC01D5007C5157 /* TOSAccessOpPOISWarningAdd.h in Copy Files */,
+				1910B90818EC01D5007C5157 /* TOSAccessOpPOISWarningDelete.h in Copy Files */,
+				1910B90918EC01D5007C5157 /* TOSAccessOpPositionsAdd.h in Copy Files */,
+				1910B90A18EC01D5007C5157 /* TOSAccessOpPositionsGet.h in Copy Files */,
+				1910B90B18EC01D5007C5157 /* TOSAccessOpPositionsGet_Between.h in Copy Files */,
+				1910B90C18EC01D5007C5157 /* TOSAccessOpResource.h in Copy Files */,
+				1910B90D18EC01D5007C5157 /* TOSAccessOpResourcesGeocode.h in Copy Files */,
+				1910B90E18EC01D5007C5157 /* TOSAccessOpResourcesGet_Polygon.h in Copy Files */,
+				1910B90F18EC01D5007C5157 /* TOSAccessOpRulesAdd.h in Copy Files */,
+				1910B91018EC01D5007C5157 /* TOSAccessOpTrackAdd.h in Copy Files */,
+				1910B91118EC01D5007C5157 /* TOSAccessOpTrackGet.h in Copy Files */,
+				1910B91218EC01D5007C5157 /* TOSAccessOpTrackGetLast.h in Copy Files */,
+				1910B91318EC01D5007C5157 /* TOSAccessOpUsersNear.h in Copy Files */,
+				1910B91418EC01D5007C5157 /* TOSAccessOpUsersUSRShow.h in Copy Files */,
+				1910B91518EC01D5007C5157 /* TOSAccessOpWebmap.h in Copy Files */,
+				1910B91618EC01D5007C5157 /* TOSAccessRes.h in Copy Files */,
+				1910B91718EC01D5007C5157 /* TOSAccessResCheckin.h in Copy Files */,
+				1910B91818EC01D5007C5157 /* TOSAccessResCheckinCollection.h in Copy Files */,
+				1910B91918EC01D5007C5157 /* TOSAccessResCheckinCollectison.h in Copy Files */,
+				1910B91A18EC01D5007C5157 /* TOSAccessResGeneric.h in Copy Files */,
+				1910B91B18EC01D5007C5157 /* TOSAccessResGeocoding.h in Copy Files */,
+				1910B91C18EC01D5007C5157 /* TOSAccessResImage.h in Copy Files */,
+				1910B91D18EC01D5007C5157 /* TOSAccessResPOI.h in Copy Files */,
+				1910B91E18EC01D5007C5157 /* TOSAccessResPOICategory.h in Copy Files */,
+				1910B91F18EC01D5007C5157 /* TOSAccessResPOICategoryCollection.h in Copy Files */,
+				1910B92018EC01D5007C5157 /* TOSAccessResPOICollection.h in Copy Files */,
+				1910B92118EC01D5007C5157 /* TOSAccessResPOIWarning.h in Copy Files */,
+				1910B92218EC01D5007C5157 /* TOSAccessResPOIWarningCollection.h in Copy Files */,
+				1910B92318EC01D5007C5157 /* TOSAccessResPolygon.h in Copy Files */,
+				1910B92418EC01D5007C5157 /* TOSAccessResPositions.h in Copy Files */,
+				1910B92518EC01D5007C5157 /* TOSAccessResPositionsCollection.h in Copy Files */,
+				1910B92618EC01D5007C5157 /* TOSAccessResRules.h in Copy Files */,
+				1910B92718EC01D5007C5157 /* TOSAccessResTrack.h in Copy Files */,
+				1910B92818EC01D5007C5157 /* TOSAccessResTrackExport.h in Copy Files */,
+				1910B92918EC01D5007C5157 /* TOSAccessResTrackResource.h in Copy Files */,
+				1910B92A18EC01D5007C5157 /* TOSAccessResUser.h in Copy Files */,
+				1910B92B18EC01D5007C5157 /* TOSAccessResUsersNear.h in Copy Files */,
+				1910B92C18EC01D5007C5157 /* TOS_CheckinOps.h in Copy Files */,
+				1910B92D18EC01D5007C5157 /* TOS_ExportOps.h in Copy Files */,
+				1910B92E18EC01D5007C5157 /* TOS_ExportTranslator.h in Copy Files */,
+				1910B92F18EC01D5007C5157 /* TOS_ImagesOps.h in Copy Files */,
+				1910B93018EC01D5007C5157 /* TOS_Accreditation.h in Copy Files */,
+				1910B93118EC01D5007C5157 /* TOS_Address.h in Copy Files */,
+				1910B93218EC01D5007C5157 /* TOS_Checkin.h in Copy Files */,
+				1910B93318EC01D5007C5157 /* TOS_CheckinCollection.h in Copy Files */,
+				1910B93418EC01D5007C5157 /* TOS_GeocodingData.h in Copy Files */,
+				1910B93518EC01D5007C5157 /* TOS_GeoData.h in Copy Files */,
+				1910B93618EC01D5007C5157 /* TOS_Image.h in Copy Files */,
+				1910B93718EC01D5007C5157 /* TOS_Location.h in Copy Files */,
+				1910B93818EC01D5007C5157 /* TOS_POI.h in Copy Files */,
+				1910B93918EC01D5007C5157 /* TOS_POICategory.h in Copy Files */,
+				1910B93A18EC01D5007C5157 /* TOS_POICategoryCollection.h in Copy Files */,
+				1910B93B18EC01D5007C5157 /* TOS_POICollection.h in Copy Files */,
+				1910B93C18EC01D5007C5157 /* TOS_POIDataWarning.h in Copy Files */,
+				1910B93D18EC01D5007C5157 /* TOS_POIWarning.h in Copy Files */,
+				1910B93E18EC01D5007C5157 /* TOS_POIWarning_Count.h in Copy Files */,
+				1910B93F18EC01D5007C5157 /* TOS_POIWarningData.h in Copy Files */,
+				1910B94018EC01D5007C5157 /* TOS_Position.h in Copy Files */,
+				1910B94118EC01D5007C5157 /* TOS_PositionCollection.h in Copy Files */,
+				1910B94218EC01D5007C5157 /* TOS_PositionType.h in Copy Files */,
+				1910B94318EC01D5007C5157 /* TOS_Profile.h in Copy Files */,
+				1910B94418EC01D5007C5157 /* TOS_Rule.h in Copy Files */,
+				1910B94518EC01D5007C5157 /* TOS_Track.h in Copy Files */,
+				1910B94618EC01D5007C5157 /* TOS_TrackResource.h in Copy Files */,
+				1910B94718EC01D5007C5157 /* TOS_User.h in Copy Files */,
+				1910B94818EC01D5007C5157 /* TOS_UserIdPosition.h in Copy Files */,
+				1910B94918EC01D5007C5157 /* TOS_UserPosition.h in Copy Files */,
+				1910B94A18EC01D5007C5157 /* TOS_UsersNear.h in Copy Files */,
+				1910B94B18EC01D5007C5157 /* TOS_ViewportType.h in Copy Files */,
+				1910B94C18EC01D5007C5157 /* TOS_VisibleDevice.h in Copy Files */,
+				1910B94D18EC01D5007C5157 /* TOS_POICategoriesOps.h in Copy Files */,
+				1910B94E18EC01D5007C5157 /* TOS_POICategoriesTranslator.h in Copy Files */,
+				1910B94F18EC01D5007C5157 /* TOS_POIOps.h in Copy Files */,
+				1910B95018EC01D5007C5157 /* TOS_POITranslator.h in Copy Files */,
+				1910B95118EC01D5007C5157 /* TOS_PositionsOps.h in Copy Files */,
+				1910B95218EC01D5007C5157 /* TOS_PositionsTranslator.h in Copy Files */,
+				1910B95318EC01D5007C5157 /* TOS_ResourcesOps.h in Copy Files */,
+				1910B95418EC01D5007C5157 /* TOS_RulesOps.h in Copy Files */,
+				1910B95518EC01D5007C5157 /* TOS_RulesTranslator.h in Copy Files */,
+				1910B95618EC01D5007C5157 /* TOS_TrackOps.h in Copy Files */,
+				1910B95718EC01D5007C5157 /* TOS_UsersOps.h in Copy Files */,
+				1910B8F018EC010C007C5157 /* Constants.h in Copy Files */,
+				1910B8F218EC010C007C5157 /* TOS_AccessTokenOAuth.h in Copy Files */,
+				1910B8EE18EBFFF5007C5157 /* LoginController.h in Copy Files */,
+				1910B8EF18EBFFFB007C5157 /* LoginTopoosController.h in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1910B56118EBE9FD007C5157 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		1910B56218EBE9FD007C5157 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		1910B56318EBE9FD007C5157 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		1910B56418EBE9FD007C5157 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		1910B56518EBE9FD007C5157 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		1910B56618EBE9FD007C5157 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		1910B56718EBE9FD007C5157 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		1910B56818EBE9FD007C5157 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		1910B56918EBE9FD007C5157 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		1910B56A18EBE9FD007C5157 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		1910B56B18EBE9FD007C5157 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		1910B56C18EBE9FD007C5157 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		1910B56D18EBE9FD007C5157 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		1910B79318EBFE47007C5157 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		1910B79418EBFE47007C5157 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		1910B79518EBFE47007C5157 /* TOS_AccessTokenOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_AccessTokenOAuth.h; sourceTree = "<group>"; };
+		1910B79618EBFE47007C5157 /* TOS_AccessTokenOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_AccessTokenOAuth.m; sourceTree = "<group>"; };
+		1910B79818EBFE47007C5157 /* TOSAccessCaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessCaller.h; sourceTree = "<group>"; };
+		1910B79918EBFE47007C5157 /* TOSAccessCaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessCaller.m; sourceTree = "<group>"; };
+		1910B79B18EBFE47007C5157 /* TOSAccessOp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOp.h; sourceTree = "<group>"; };
+		1910B79C18EBFE47007C5157 /* TOSAccessOp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOp.m; sourceTree = "<group>"; };
+		1910B79D18EBFE47007C5157 /* TOSAccessOpCheckinAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpCheckinAdd.h; sourceTree = "<group>"; };
+		1910B79E18EBFE47007C5157 /* TOSAccessOpCheckinAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpCheckinAdd.m; sourceTree = "<group>"; };
+		1910B79F18EBFE47007C5157 /* TOSAccessOpCheckinGet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpCheckinGet.h; sourceTree = "<group>"; };
+		1910B7A018EBFE47007C5157 /* TOSAccessOpCheckinGet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpCheckinGet.m; sourceTree = "<group>"; };
+		1910B7A118EBFE47007C5157 /* TOSAccessOpCheckinGet_Last.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpCheckinGet_Last.h; sourceTree = "<group>"; };
+		1910B7A218EBFE47007C5157 /* TOSAccessOpCheckinGet_Last.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpCheckinGet_Last.m; sourceTree = "<group>"; };
+		1910B7A318EBFE47007C5157 /* TOSAccessOpCheckinGet_Where.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpCheckinGet_Where.h; sourceTree = "<group>"; };
+		1910B7A418EBFE47007C5157 /* TOSAccessOpCheckinGet_Where.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpCheckinGet_Where.m; sourceTree = "<group>"; };
+		1910B7A518EBFE47007C5157 /* TOSAccessOpExportLayerTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpExportLayerTrack.h; sourceTree = "<group>"; };
+		1910B7A618EBFE47007C5157 /* TOSAccessOpExportLayerTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpExportLayerTrack.m; sourceTree = "<group>"; };
+		1910B7A718EBFE47007C5157 /* TOSAccessOpImageUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpImageUpload.h; sourceTree = "<group>"; };
+		1910B7A818EBFE47007C5157 /* TOSAccessOpImageUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpImageUpload.m; sourceTree = "<group>"; };
+		1910B7A918EBFE47007C5157 /* TOSAccessOpPOISAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpPOISAdd.h; sourceTree = "<group>"; };
+		1910B7AA18EBFE47007C5157 /* TOSAccessOpPOISAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpPOISAdd.m; sourceTree = "<group>"; };
+		1910B7AB18EBFE47007C5157 /* TOSAccessOpPOISCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpPOISCategories.h; sourceTree = "<group>"; };
+		1910B7AC18EBFE47007C5157 /* TOSAccessOpPOISCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpPOISCategories.m; sourceTree = "<group>"; };
+		1910B7AD18EBFE47007C5157 /* TOSAccessOpPOISCategoriesAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpPOISCategoriesAdd.h; sourceTree = "<group>"; };
+		1910B7AE18EBFE47007C5157 /* TOSAccessOpPOISCategoriesAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpPOISCategoriesAdd.m; sourceTree = "<group>"; };
+		1910B7AF18EBFE47007C5157 /* TOSAccessOpPOISCategoriesDelete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpPOISCategoriesDelete.h; sourceTree = "<group>"; };
+		1910B7B018EBFE47007C5157 /* TOSAccessOpPOISCategoriesDelete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpPOISCategoriesDelete.m; sourceTree = "<group>"; };
+		1910B7B118EBFE47007C5157 /* TOSAccessOpPOISCategoriesUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpPOISCategoriesUpdate.h; sourceTree = "<group>"; };
+		1910B7B218EBFE47007C5157 /* TOSAccessOpPOISCategoriesUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpPOISCategoriesUpdate.m; sourceTree = "<group>"; };
+		1910B7B318EBFE47007C5157 /* TOSAccessOpPOISDelete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpPOISDelete.h; sourceTree = "<group>"; };
+		1910B7B418EBFE47007C5157 /* TOSAccessOpPOISDelete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpPOISDelete.m; sourceTree = "<group>"; };
+		1910B7B518EBFE47007C5157 /* TOSAccessOpPOISGet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpPOISGet.h; sourceTree = "<group>"; };
+		1910B7B618EBFE47007C5157 /* TOSAccessOpPOISGet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpPOISGet.m; sourceTree = "<group>"; };
+		1910B7B718EBFE47007C5157 /* TOSAccessOpPOISGet_near.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpPOISGet_near.h; sourceTree = "<group>"; };
+		1910B7B818EBFE47007C5157 /* TOSAccessOpPOISGet_near.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpPOISGet_near.m; sourceTree = "<group>"; };
+		1910B7B918EBFE47007C5157 /* TOSAccessOpPOISGet_where.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpPOISGet_where.h; sourceTree = "<group>"; };
+		1910B7BA18EBFE47007C5157 /* TOSAccessOpPOISGet_where.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpPOISGet_where.m; sourceTree = "<group>"; };
+		1910B7BB18EBFE47007C5157 /* TOSAccessOpPOISUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpPOISUpdate.h; sourceTree = "<group>"; };
+		1910B7BC18EBFE47007C5157 /* TOSAccessOpPOISUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpPOISUpdate.m; sourceTree = "<group>"; };
+		1910B7BD18EBFE47007C5157 /* TOSAccessOpPOISWarning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpPOISWarning.h; sourceTree = "<group>"; };
+		1910B7BE18EBFE47007C5157 /* TOSAccessOpPOISWarning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpPOISWarning.m; sourceTree = "<group>"; };
+		1910B7BF18EBFE47007C5157 /* TOSAccessOpPOISWarningAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpPOISWarningAdd.h; sourceTree = "<group>"; };
+		1910B7C018EBFE47007C5157 /* TOSAccessOpPOISWarningAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpPOISWarningAdd.m; sourceTree = "<group>"; };
+		1910B7C118EBFE47007C5157 /* TOSAccessOpPOISWarningDelete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpPOISWarningDelete.h; sourceTree = "<group>"; };
+		1910B7C218EBFE47007C5157 /* TOSAccessOpPOISWarningDelete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpPOISWarningDelete.m; sourceTree = "<group>"; };
+		1910B7C418EBFE47007C5157 /* TOSAccessOpPositionsAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpPositionsAdd.h; sourceTree = "<group>"; };
+		1910B7C518EBFE47007C5157 /* TOSAccessOpPositionsAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpPositionsAdd.m; sourceTree = "<group>"; };
+		1910B7C618EBFE47007C5157 /* TOSAccessOpPositionsGet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpPositionsGet.h; sourceTree = "<group>"; };
+		1910B7C718EBFE47007C5157 /* TOSAccessOpPositionsGet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpPositionsGet.m; sourceTree = "<group>"; };
+		1910B7C818EBFE47007C5157 /* TOSAccessOpPositionsGet_Between.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpPositionsGet_Between.h; sourceTree = "<group>"; };
+		1910B7C918EBFE47007C5157 /* TOSAccessOpPositionsGet_Between.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpPositionsGet_Between.m; sourceTree = "<group>"; };
+		1910B7CA18EBFE47007C5157 /* TOSAccessOpResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpResource.h; sourceTree = "<group>"; };
+		1910B7CB18EBFE47007C5157 /* TOSAccessOpResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpResource.m; sourceTree = "<group>"; };
+		1910B7CC18EBFE47007C5157 /* TOSAccessOpResourcesGeocode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpResourcesGeocode.h; sourceTree = "<group>"; };
+		1910B7CD18EBFE47007C5157 /* TOSAccessOpResourcesGeocode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpResourcesGeocode.m; sourceTree = "<group>"; };
+		1910B7CE18EBFE47007C5157 /* TOSAccessOpResourcesGet_Polygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpResourcesGet_Polygon.h; sourceTree = "<group>"; };
+		1910B7CF18EBFE47007C5157 /* TOSAccessOpResourcesGet_Polygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpResourcesGet_Polygon.m; sourceTree = "<group>"; };
+		1910B7D018EBFE47007C5157 /* TOSAccessOpRulesAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpRulesAdd.h; sourceTree = "<group>"; };
+		1910B7D118EBFE47007C5157 /* TOSAccessOpRulesAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpRulesAdd.m; sourceTree = "<group>"; };
+		1910B7D218EBFE47007C5157 /* TOSAccessOpTrackAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpTrackAdd.h; sourceTree = "<group>"; };
+		1910B7D318EBFE47007C5157 /* TOSAccessOpTrackAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpTrackAdd.m; sourceTree = "<group>"; };
+		1910B7D418EBFE47007C5157 /* TOSAccessOpTrackGet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpTrackGet.h; sourceTree = "<group>"; };
+		1910B7D518EBFE47007C5157 /* TOSAccessOpTrackGet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpTrackGet.m; sourceTree = "<group>"; };
+		1910B7D618EBFE47007C5157 /* TOSAccessOpTrackGetLast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpTrackGetLast.h; sourceTree = "<group>"; };
+		1910B7D718EBFE47007C5157 /* TOSAccessOpTrackGetLast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpTrackGetLast.m; sourceTree = "<group>"; };
+		1910B7D818EBFE47007C5157 /* TOSAccessOpUsersNear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpUsersNear.h; sourceTree = "<group>"; };
+		1910B7D918EBFE47007C5157 /* TOSAccessOpUsersNear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpUsersNear.m; sourceTree = "<group>"; };
+		1910B7DA18EBFE47007C5157 /* TOSAccessOpUsersUSRShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpUsersUSRShow.h; sourceTree = "<group>"; };
+		1910B7DB18EBFE47007C5157 /* TOSAccessOpUsersUSRShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpUsersUSRShow.m; sourceTree = "<group>"; };
+		1910B7DC18EBFE47007C5157 /* TOSAccessOpWebmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessOpWebmap.h; sourceTree = "<group>"; };
+		1910B7DD18EBFE47007C5157 /* TOSAccessOpWebmap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessOpWebmap.m; sourceTree = "<group>"; };
+		1910B7DF18EBFE47007C5157 /* TOSAccessRes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessRes.h; sourceTree = "<group>"; };
+		1910B7E018EBFE47007C5157 /* TOSAccessRes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessRes.m; sourceTree = "<group>"; };
+		1910B7E118EBFE47007C5157 /* TOSAccessResCheckin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessResCheckin.h; sourceTree = "<group>"; };
+		1910B7E218EBFE47007C5157 /* TOSAccessResCheckin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessResCheckin.m; sourceTree = "<group>"; };
+		1910B7E318EBFE47007C5157 /* TOSAccessResCheckinCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessResCheckinCollection.h; sourceTree = "<group>"; };
+		1910B7E418EBFE47007C5157 /* TOSAccessResCheckinCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessResCheckinCollection.m; sourceTree = "<group>"; };
+		1910B7E518EBFE47007C5157 /* TOSAccessResCheckinCollectiosn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessResCheckinCollectiosn.m; sourceTree = "<group>"; };
+		1910B7E618EBFE47007C5157 /* TOSAccessResCheckinCollectison.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessResCheckinCollectison.h; sourceTree = "<group>"; };
+		1910B7E718EBFE47007C5157 /* TOSAccessResGeneric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessResGeneric.h; sourceTree = "<group>"; };
+		1910B7E818EBFE47007C5157 /* TOSAccessResGeneric.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessResGeneric.m; sourceTree = "<group>"; };
+		1910B7E918EBFE47007C5157 /* TOSAccessResGeocoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessResGeocoding.h; sourceTree = "<group>"; };
+		1910B7EA18EBFE47007C5157 /* TOSAccessResGeocoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessResGeocoding.m; sourceTree = "<group>"; };
+		1910B7EB18EBFE47007C5157 /* TOSAccessResImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessResImage.h; sourceTree = "<group>"; };
+		1910B7EC18EBFE47007C5157 /* TOSAccessResImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessResImage.m; sourceTree = "<group>"; };
+		1910B7ED18EBFE47007C5157 /* TOSAccessResPOI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessResPOI.h; sourceTree = "<group>"; };
+		1910B7EE18EBFE47007C5157 /* TOSAccessResPOI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessResPOI.m; sourceTree = "<group>"; };
+		1910B7EF18EBFE47007C5157 /* TOSAccessResPOICategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessResPOICategory.h; sourceTree = "<group>"; };
+		1910B7F018EBFE47007C5157 /* TOSAccessResPOICategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessResPOICategory.m; sourceTree = "<group>"; };
+		1910B7F118EBFE47007C5157 /* TOSAccessResPOICategoryCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessResPOICategoryCollection.h; sourceTree = "<group>"; };
+		1910B7F218EBFE47007C5157 /* TOSAccessResPOICategoryCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessResPOICategoryCollection.m; sourceTree = "<group>"; };
+		1910B7F318EBFE47007C5157 /* TOSAccessResPOICollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessResPOICollection.h; sourceTree = "<group>"; };
+		1910B7F418EBFE47007C5157 /* TOSAccessResPOICollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessResPOICollection.m; sourceTree = "<group>"; };
+		1910B7F518EBFE47007C5157 /* TOSAccessResPOIWarning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessResPOIWarning.h; sourceTree = "<group>"; };
+		1910B7F618EBFE47007C5157 /* TOSAccessResPOIWarning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessResPOIWarning.m; sourceTree = "<group>"; };
+		1910B7F718EBFE47007C5157 /* TOSAccessResPOIWarningCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessResPOIWarningCollection.h; sourceTree = "<group>"; };
+		1910B7F818EBFE47007C5157 /* TOSAccessResPOIWarningCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessResPOIWarningCollection.m; sourceTree = "<group>"; };
+		1910B7F918EBFE47007C5157 /* TOSAccessResPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessResPolygon.h; sourceTree = "<group>"; };
+		1910B7FA18EBFE47007C5157 /* TOSAccessResPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessResPolygon.m; sourceTree = "<group>"; };
+		1910B7FB18EBFE47007C5157 /* TOSAccessResPositions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessResPositions.h; sourceTree = "<group>"; };
+		1910B7FC18EBFE47007C5157 /* TOSAccessResPositions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessResPositions.m; sourceTree = "<group>"; };
+		1910B7FD18EBFE47007C5157 /* TOSAccessResPositionsCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessResPositionsCollection.h; sourceTree = "<group>"; };
+		1910B7FE18EBFE47007C5157 /* TOSAccessResPositionsCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessResPositionsCollection.m; sourceTree = "<group>"; };
+		1910B7FF18EBFE47007C5157 /* TOSAccessResRules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessResRules.h; sourceTree = "<group>"; };
+		1910B80018EBFE47007C5157 /* TOSAccessResRules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessResRules.m; sourceTree = "<group>"; };
+		1910B80118EBFE47007C5157 /* TOSAccessResTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessResTrack.h; sourceTree = "<group>"; };
+		1910B80218EBFE47007C5157 /* TOSAccessResTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessResTrack.m; sourceTree = "<group>"; };
+		1910B80318EBFE47007C5157 /* TOSAccessResTrackExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessResTrackExport.h; sourceTree = "<group>"; };
+		1910B80418EBFE47007C5157 /* TOSAccessResTrackExport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessResTrackExport.m; sourceTree = "<group>"; };
+		1910B80518EBFE47007C5157 /* TOSAccessResTrackResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessResTrackResource.h; sourceTree = "<group>"; };
+		1910B80618EBFE47007C5157 /* TOSAccessResTrackResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessResTrackResource.m; sourceTree = "<group>"; };
+		1910B80718EBFE47007C5157 /* TOSAccessResUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessResUser.h; sourceTree = "<group>"; };
+		1910B80818EBFE47007C5157 /* TOSAccessResUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessResUser.m; sourceTree = "<group>"; };
+		1910B80918EBFE47007C5157 /* TOSAccessResUsersNear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOSAccessResUsersNear.h; sourceTree = "<group>"; };
+		1910B80A18EBFE47007C5157 /* TOSAccessResUsersNear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOSAccessResUsersNear.m; sourceTree = "<group>"; };
+		1910B80C18EBFE47007C5157 /* TOS_CheckinOps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_CheckinOps.h; sourceTree = "<group>"; };
+		1910B80D18EBFE47007C5157 /* TOS_CheckinOps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_CheckinOps.m; sourceTree = "<group>"; };
+		1910B80F18EBFE47007C5157 /* TOS_ExportOps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_ExportOps.h; sourceTree = "<group>"; };
+		1910B81018EBFE47007C5157 /* TOS_ExportOps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_ExportOps.m; sourceTree = "<group>"; };
+		1910B81118EBFE47007C5157 /* TOS_ExportTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_ExportTranslator.h; sourceTree = "<group>"; };
+		1910B81218EBFE47007C5157 /* TOS_ExportTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_ExportTranslator.m; sourceTree = "<group>"; };
+		1910B81418EBFE47007C5157 /* TOS_ImagesOps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_ImagesOps.h; sourceTree = "<group>"; };
+		1910B81518EBFE47007C5157 /* TOS_ImagesOps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_ImagesOps.m; sourceTree = "<group>"; };
+		1910B81718EBFE47007C5157 /* TOS_Accreditation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_Accreditation.h; sourceTree = "<group>"; };
+		1910B81818EBFE47007C5157 /* TOS_Accreditation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_Accreditation.m; sourceTree = "<group>"; };
+		1910B81918EBFE47007C5157 /* TOS_Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_Address.h; sourceTree = "<group>"; };
+		1910B81A18EBFE47007C5157 /* TOS_Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_Address.m; sourceTree = "<group>"; };
+		1910B81B18EBFE47007C5157 /* TOS_Checkin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_Checkin.h; sourceTree = "<group>"; };
+		1910B81C18EBFE47007C5157 /* TOS_Checkin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_Checkin.m; sourceTree = "<group>"; };
+		1910B81D18EBFE47007C5157 /* TOS_CheckinCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_CheckinCollection.h; sourceTree = "<group>"; };
+		1910B81E18EBFE47007C5157 /* TOS_CheckinCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_CheckinCollection.m; sourceTree = "<group>"; };
+		1910B81F18EBFE47007C5157 /* TOS_GeocodingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_GeocodingData.h; sourceTree = "<group>"; };
+		1910B82018EBFE47007C5157 /* TOS_GeocodingData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_GeocodingData.m; sourceTree = "<group>"; };
+		1910B82118EBFE47007C5157 /* TOS_GeoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_GeoData.h; sourceTree = "<group>"; };
+		1910B82218EBFE47007C5157 /* TOS_GeoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_GeoData.m; sourceTree = "<group>"; };
+		1910B82318EBFE47007C5157 /* TOS_Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_Image.h; sourceTree = "<group>"; };
+		1910B82418EBFE47007C5157 /* TOS_Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_Image.m; sourceTree = "<group>"; };
+		1910B82518EBFE47007C5157 /* TOS_Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_Location.h; sourceTree = "<group>"; };
+		1910B82618EBFE47007C5157 /* TOS_Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_Location.m; sourceTree = "<group>"; };
+		1910B82718EBFE47007C5157 /* TOS_POI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_POI.h; sourceTree = "<group>"; };
+		1910B82818EBFE47007C5157 /* TOS_POI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_POI.m; sourceTree = "<group>"; };
+		1910B82918EBFE47007C5157 /* TOS_POICategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_POICategory.h; sourceTree = "<group>"; };
+		1910B82A18EBFE47007C5157 /* TOS_POICategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_POICategory.m; sourceTree = "<group>"; };
+		1910B82B18EBFE47007C5157 /* TOS_POICategoryCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_POICategoryCollection.h; sourceTree = "<group>"; };
+		1910B82C18EBFE47007C5157 /* TOS_POICategoryCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_POICategoryCollection.m; sourceTree = "<group>"; };
+		1910B82D18EBFE47007C5157 /* TOS_POICollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_POICollection.h; sourceTree = "<group>"; };
+		1910B82E18EBFE47007C5157 /* TOS_POICollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_POICollection.m; sourceTree = "<group>"; };
+		1910B82F18EBFE47007C5157 /* TOS_POIDataWarning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_POIDataWarning.h; sourceTree = "<group>"; };
+		1910B83018EBFE47007C5157 /* TOS_POIDataWarning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_POIDataWarning.m; sourceTree = "<group>"; };
+		1910B83118EBFE47007C5157 /* TOS_POIWarning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_POIWarning.h; sourceTree = "<group>"; };
+		1910B83218EBFE47007C5157 /* TOS_POIWarning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_POIWarning.m; sourceTree = "<group>"; };
+		1910B83318EBFE47007C5157 /* TOS_POIWarning_Count.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_POIWarning_Count.h; sourceTree = "<group>"; };
+		1910B83418EBFE47007C5157 /* TOS_POIWarning_Count.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_POIWarning_Count.m; sourceTree = "<group>"; };
+		1910B83518EBFE47007C5157 /* TOS_POIWarningData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_POIWarningData.h; sourceTree = "<group>"; };
+		1910B83618EBFE47007C5157 /* TOS_POIWarningData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_POIWarningData.m; sourceTree = "<group>"; };
+		1910B83718EBFE47007C5157 /* TOS_Position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_Position.h; sourceTree = "<group>"; };
+		1910B83818EBFE47007C5157 /* TOS_Position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_Position.m; sourceTree = "<group>"; };
+		1910B83918EBFE47007C5157 /* TOS_PositionCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_PositionCollection.h; sourceTree = "<group>"; };
+		1910B83A18EBFE47007C5157 /* TOS_PositionCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_PositionCollection.m; sourceTree = "<group>"; };
+		1910B83B18EBFE47007C5157 /* TOS_PositionType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_PositionType.h; sourceTree = "<group>"; };
+		1910B83C18EBFE47007C5157 /* TOS_PositionType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_PositionType.m; sourceTree = "<group>"; };
+		1910B83D18EBFE47007C5157 /* TOS_Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_Profile.h; sourceTree = "<group>"; };
+		1910B83E18EBFE47007C5157 /* TOS_Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_Profile.m; sourceTree = "<group>"; };
+		1910B83F18EBFE47007C5157 /* TOS_Rule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_Rule.h; sourceTree = "<group>"; };
+		1910B84018EBFE47007C5157 /* TOS_Rule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_Rule.m; sourceTree = "<group>"; };
+		1910B84118EBFE47007C5157 /* TOS_Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_Track.h; sourceTree = "<group>"; };
+		1910B84218EBFE47007C5157 /* TOS_Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_Track.m; sourceTree = "<group>"; };
+		1910B84318EBFE47007C5157 /* TOS_TrackResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_TrackResource.h; sourceTree = "<group>"; };
+		1910B84418EBFE47007C5157 /* TOS_TrackResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_TrackResource.m; sourceTree = "<group>"; };
+		1910B84518EBFE47007C5157 /* TOS_User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_User.h; sourceTree = "<group>"; };
+		1910B84618EBFE47007C5157 /* TOS_User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_User.m; sourceTree = "<group>"; };
+		1910B84718EBFE47007C5157 /* TOS_UserIdPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_UserIdPosition.h; sourceTree = "<group>"; };
+		1910B84818EBFE47007C5157 /* TOS_UserIdPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_UserIdPosition.m; sourceTree = "<group>"; };
+		1910B84918EBFE47007C5157 /* TOS_UserPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_UserPosition.h; sourceTree = "<group>"; };
+		1910B84A18EBFE47007C5157 /* TOS_UserPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_UserPosition.m; sourceTree = "<group>"; };
+		1910B84B18EBFE47007C5157 /* TOS_UsersNear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_UsersNear.h; sourceTree = "<group>"; };
+		1910B84C18EBFE47007C5157 /* TOS_UsersNear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_UsersNear.m; sourceTree = "<group>"; };
+		1910B84D18EBFE47007C5157 /* TOS_ViewportType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_ViewportType.h; sourceTree = "<group>"; };
+		1910B84E18EBFE47007C5157 /* TOS_ViewportType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_ViewportType.m; sourceTree = "<group>"; };
+		1910B84F18EBFE47007C5157 /* TOS_VisibleDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_VisibleDevice.h; sourceTree = "<group>"; };
+		1910B85018EBFE47007C5157 /* TOS_VisibleDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_VisibleDevice.m; sourceTree = "<group>"; };
+		1910B85218EBFE47007C5157 /* TOS_POICategoriesOps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_POICategoriesOps.h; sourceTree = "<group>"; };
+		1910B85318EBFE47007C5157 /* TOS_POICategoriesOps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_POICategoriesOps.m; sourceTree = "<group>"; };
+		1910B85418EBFE47007C5157 /* TOS_POICategoriesTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_POICategoriesTranslator.h; sourceTree = "<group>"; };
+		1910B85518EBFE47007C5157 /* TOS_POICategoriesTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_POICategoriesTranslator.m; sourceTree = "<group>"; };
+		1910B85718EBFE47007C5157 /* TOS_POIOps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_POIOps.h; sourceTree = "<group>"; };
+		1910B85818EBFE47007C5157 /* TOS_POIOps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_POIOps.m; sourceTree = "<group>"; };
+		1910B85918EBFE47007C5157 /* TOS_POITranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_POITranslator.h; sourceTree = "<group>"; };
+		1910B85A18EBFE47007C5157 /* TOS_POITranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_POITranslator.m; sourceTree = "<group>"; };
+		1910B85C18EBFE47007C5157 /* TOS_PositionsOps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_PositionsOps.h; sourceTree = "<group>"; };
+		1910B85D18EBFE47007C5157 /* TOS_PositionsOps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_PositionsOps.m; sourceTree = "<group>"; };
+		1910B85E18EBFE47007C5157 /* TOS_PositionsTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_PositionsTranslator.h; sourceTree = "<group>"; };
+		1910B85F18EBFE47007C5157 /* TOS_PositionsTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_PositionsTranslator.m; sourceTree = "<group>"; };
+		1910B86118EBFE47007C5157 /* TOS_ResourcesOps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_ResourcesOps.h; sourceTree = "<group>"; };
+		1910B86218EBFE47007C5157 /* TOS_ResourcesOps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_ResourcesOps.m; sourceTree = "<group>"; };
+		1910B86418EBFE47007C5157 /* TOS_RulesOps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_RulesOps.h; sourceTree = "<group>"; };
+		1910B86518EBFE47007C5157 /* TOS_RulesOps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_RulesOps.m; sourceTree = "<group>"; };
+		1910B86618EBFE47007C5157 /* TOS_RulesTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_RulesTranslator.h; sourceTree = "<group>"; };
+		1910B86718EBFE47007C5157 /* TOS_RulesTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_RulesTranslator.m; sourceTree = "<group>"; };
+		1910B86918EBFE47007C5157 /* TOS_TrackOps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_TrackOps.h; sourceTree = "<group>"; };
+		1910B86A18EBFE47007C5157 /* TOS_TrackOps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_TrackOps.m; sourceTree = "<group>"; };
+		1910B86C18EBFE47007C5157 /* TOS_UsersOps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOS_UsersOps.h; sourceTree = "<group>"; };
+		1910B86D18EBFE47007C5157 /* TOS_UsersOps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOS_UsersOps.m; sourceTree = "<group>"; };
+		1910B8D518EBFF92007C5157 /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		1910B8D618EBFF92007C5157 /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		1910B8D718EBFF92007C5157 /* LoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginController.xib; sourceTree = "<group>"; };
+		1910B8D818EBFF92007C5157 /* LoginTopoosController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTopoosController.h; sourceTree = "<group>"; };
+		1910B8D918EBFF92007C5157 /* LoginTopoosController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTopoosController.m; sourceTree = "<group>"; };
+		1910B8E018EBFFAB007C5157 /* SDKtopoosResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDKtopoosResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		1910B8E118EBFFAB007C5157 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		1910B8E518EBFFAB007C5157 /* SDKtopoosResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SDKtopoosResources-Info.plist"; sourceTree = "<group>"; };
+		1910B8E718EBFFAB007C5157 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1910B8E918EBFFAB007C5157 /* SDKtopoosResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDKtopoosResources-Prefix.pch"; sourceTree = "<group>"; };
+		19CDAFEE18EB1976001C381C /* libSDKTopoos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSDKTopoos.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		19CDAFF118EB1976001C381C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		19CDAFF518EB1976001C381C /* SDKTopoos-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDKTopoos-Prefix.pch"; sourceTree = "<group>"; };
+		19CDAFFF18EB1976001C381C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		19CDB00218EB1976001C381C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		19CDB00918EB1976001C381C /* SDKTopoosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SDKTopoosTests-Info.plist"; sourceTree = "<group>"; };
+		19CDB00B18EB1976001C381C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		19CDB00D18EB1976001C381C /* SDKTopoosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDKTopoosTests.m; sourceTree = "<group>"; };
+		19CDB02D18EB19C2001C381C /* UrlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrlParser.h; sourceTree = "<group>"; };
+		19CDB02E18EB19C2001C381C /* UrlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UrlParser.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1910B8DD18EBFFAB007C5157 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1910B8E218EBFFAB007C5157 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19CDAFEB18EB1976001C381C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19CDAFF218EB1976001C381C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1910B56018EBE9FD007C5157 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				1910B56118EBE9FD007C5157 /* JSON.h */,
+				1910B56218EBE9FD007C5157 /* NSObject+SBJSON.h */,
+				1910B56318EBE9FD007C5157 /* NSObject+SBJSON.m */,
+				1910B56418EBE9FD007C5157 /* NSString+SBJSON.h */,
+				1910B56518EBE9FD007C5157 /* NSString+SBJSON.m */,
+				1910B56618EBE9FD007C5157 /* SBJSON.h */,
+				1910B56718EBE9FD007C5157 /* SBJSON.m */,
+				1910B56818EBE9FD007C5157 /* SBJsonBase.h */,
+				1910B56918EBE9FD007C5157 /* SBJsonBase.m */,
+				1910B56A18EBE9FD007C5157 /* SBJsonParser.h */,
+				1910B56B18EBE9FD007C5157 /* SBJsonParser.m */,
+				1910B56C18EBE9FD007C5157 /* SBJsonWriter.h */,
+				1910B56D18EBE9FD007C5157 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		1910B79218EBFE47007C5157 /* SDKtopoosLib */ = {
+			isa = PBXGroup;
+			children = (
+				1910B79318EBFE47007C5157 /* Constants.h */,
+				1910B79418EBFE47007C5157 /* Constants.m */,
+				1910B79518EBFE47007C5157 /* TOS_AccessTokenOAuth.h */,
+				1910B79618EBFE47007C5157 /* TOS_AccessTokenOAuth.m */,
+				1910B79718EBFE47007C5157 /* TOSAccess */,
+				1910B79A18EBFE47007C5157 /* TOSAccessOps */,
+				1910B7DE18EBFE47007C5157 /* TOSAccessRes */,
+				1910B80B18EBFE47007C5157 /* TOSCheckinOps */,
+				1910B80E18EBFE47007C5157 /* TOSExportOps */,
+				1910B81318EBFE47007C5157 /* TOSImagesOps */,
+				1910B81618EBFE47007C5157 /* TOSObjets */,
+				1910B85118EBFE47007C5157 /* TOSPOICategoriesOps */,
+				1910B85618EBFE47007C5157 /* TOSPOIOps */,
+				1910B85B18EBFE47007C5157 /* TOSPositionsOps */,
+				1910B86018EBFE47007C5157 /* TOSResourcesOps */,
+				1910B86318EBFE47007C5157 /* TOSRulesOps */,
+				1910B86818EBFE47007C5157 /* TOSTrackOps */,
+				1910B86B18EBFE47007C5157 /* TOSUsersOps */,
+			);
+			path = SDKtopoosLib;
+			sourceTree = "<group>";
+		};
+		1910B79718EBFE47007C5157 /* TOSAccess */ = {
+			isa = PBXGroup;
+			children = (
+				1910B79818EBFE47007C5157 /* TOSAccessCaller.h */,
+				1910B79918EBFE47007C5157 /* TOSAccessCaller.m */,
+			);
+			path = TOSAccess;
+			sourceTree = "<group>";
+		};
+		1910B79A18EBFE47007C5157 /* TOSAccessOps */ = {
+			isa = PBXGroup;
+			children = (
+				1910B79B18EBFE47007C5157 /* TOSAccessOp.h */,
+				1910B79C18EBFE47007C5157 /* TOSAccessOp.m */,
+				1910B79D18EBFE47007C5157 /* TOSAccessOpCheckinAdd.h */,
+				1910B79E18EBFE47007C5157 /* TOSAccessOpCheckinAdd.m */,
+				1910B79F18EBFE47007C5157 /* TOSAccessOpCheckinGet.h */,
+				1910B7A018EBFE47007C5157 /* TOSAccessOpCheckinGet.m */,
+				1910B7A118EBFE47007C5157 /* TOSAccessOpCheckinGet_Last.h */,
+				1910B7A218EBFE47007C5157 /* TOSAccessOpCheckinGet_Last.m */,
+				1910B7A318EBFE47007C5157 /* TOSAccessOpCheckinGet_Where.h */,
+				1910B7A418EBFE47007C5157 /* TOSAccessOpCheckinGet_Where.m */,
+				1910B7A518EBFE47007C5157 /* TOSAccessOpExportLayerTrack.h */,
+				1910B7A618EBFE47007C5157 /* TOSAccessOpExportLayerTrack.m */,
+				1910B7A718EBFE47007C5157 /* TOSAccessOpImageUpload.h */,
+				1910B7A818EBFE47007C5157 /* TOSAccessOpImageUpload.m */,
+				1910B7A918EBFE47007C5157 /* TOSAccessOpPOISAdd.h */,
+				1910B7AA18EBFE47007C5157 /* TOSAccessOpPOISAdd.m */,
+				1910B7AB18EBFE47007C5157 /* TOSAccessOpPOISCategories.h */,
+				1910B7AC18EBFE47007C5157 /* TOSAccessOpPOISCategories.m */,
+				1910B7AD18EBFE47007C5157 /* TOSAccessOpPOISCategoriesAdd.h */,
+				1910B7AE18EBFE47007C5157 /* TOSAccessOpPOISCategoriesAdd.m */,
+				1910B7AF18EBFE47007C5157 /* TOSAccessOpPOISCategoriesDelete.h */,
+				1910B7B018EBFE47007C5157 /* TOSAccessOpPOISCategoriesDelete.m */,
+				1910B7B118EBFE47007C5157 /* TOSAccessOpPOISCategoriesUpdate.h */,
+				1910B7B218EBFE47007C5157 /* TOSAccessOpPOISCategoriesUpdate.m */,
+				1910B7B318EBFE47007C5157 /* TOSAccessOpPOISDelete.h */,
+				1910B7B418EBFE47007C5157 /* TOSAccessOpPOISDelete.m */,
+				1910B7B518EBFE47007C5157 /* TOSAccessOpPOISGet.h */,
+				1910B7B618EBFE47007C5157 /* TOSAccessOpPOISGet.m */,
+				1910B7B718EBFE47007C5157 /* TOSAccessOpPOISGet_near.h */,
+				1910B7B818EBFE47007C5157 /* TOSAccessOpPOISGet_near.m */,
+				1910B7B918EBFE47007C5157 /* TOSAccessOpPOISGet_where.h */,
+				1910B7BA18EBFE47007C5157 /* TOSAccessOpPOISGet_where.m */,
+				1910B7BB18EBFE47007C5157 /* TOSAccessOpPOISUpdate.h */,
+				1910B7BC18EBFE47007C5157 /* TOSAccessOpPOISUpdate.m */,
+				1910B7BD18EBFE47007C5157 /* TOSAccessOpPOISWarning.h */,
+				1910B7BE18EBFE47007C5157 /* TOSAccessOpPOISWarning.m */,
+				1910B7BF18EBFE47007C5157 /* TOSAccessOpPOISWarningAdd.h */,
+				1910B7C018EBFE47007C5157 /* TOSAccessOpPOISWarningAdd.m */,
+				1910B7C118EBFE47007C5157 /* TOSAccessOpPOISWarningDelete.h */,
+				1910B7C218EBFE47007C5157 /* TOSAccessOpPOISWarningDelete.m */,
+				1910B7C418EBFE47007C5157 /* TOSAccessOpPositionsAdd.h */,
+				1910B7C518EBFE47007C5157 /* TOSAccessOpPositionsAdd.m */,
+				1910B7C618EBFE47007C5157 /* TOSAccessOpPositionsGet.h */,
+				1910B7C718EBFE47007C5157 /* TOSAccessOpPositionsGet.m */,
+				1910B7C818EBFE47007C5157 /* TOSAccessOpPositionsGet_Between.h */,
+				1910B7C918EBFE47007C5157 /* TOSAccessOpPositionsGet_Between.m */,
+				1910B7CA18EBFE47007C5157 /* TOSAccessOpResource.h */,
+				1910B7CB18EBFE47007C5157 /* TOSAccessOpResource.m */,
+				1910B7CC18EBFE47007C5157 /* TOSAccessOpResourcesGeocode.h */,
+				1910B7CD18EBFE47007C5157 /* TOSAccessOpResourcesGeocode.m */,
+				1910B7CE18EBFE47007C5157 /* TOSAccessOpResourcesGet_Polygon.h */,
+				1910B7CF18EBFE47007C5157 /* TOSAccessOpResourcesGet_Polygon.m */,
+				1910B7D018EBFE47007C5157 /* TOSAccessOpRulesAdd.h */,
+				1910B7D118EBFE47007C5157 /* TOSAccessOpRulesAdd.m */,
+				1910B7D218EBFE47007C5157 /* TOSAccessOpTrackAdd.h */,
+				1910B7D318EBFE47007C5157 /* TOSAccessOpTrackAdd.m */,
+				1910B7D418EBFE47007C5157 /* TOSAccessOpTrackGet.h */,
+				1910B7D518EBFE47007C5157 /* TOSAccessOpTrackGet.m */,
+				1910B7D618EBFE47007C5157 /* TOSAccessOpTrackGetLast.h */,
+				1910B7D718EBFE47007C5157 /* TOSAccessOpTrackGetLast.m */,
+				1910B7D818EBFE47007C5157 /* TOSAccessOpUsersNear.h */,
+				1910B7D918EBFE47007C5157 /* TOSAccessOpUsersNear.m */,
+				1910B7DA18EBFE47007C5157 /* TOSAccessOpUsersUSRShow.h */,
+				1910B7DB18EBFE47007C5157 /* TOSAccessOpUsersUSRShow.m */,
+				1910B7DC18EBFE47007C5157 /* TOSAccessOpWebmap.h */,
+				1910B7DD18EBFE47007C5157 /* TOSAccessOpWebmap.m */,
+			);
+			path = TOSAccessOps;
+			sourceTree = "<group>";
+		};
+		1910B7DE18EBFE47007C5157 /* TOSAccessRes */ = {
+			isa = PBXGroup;
+			children = (
+				1910B7DF18EBFE47007C5157 /* TOSAccessRes.h */,
+				1910B7E018EBFE47007C5157 /* TOSAccessRes.m */,
+				1910B7E118EBFE47007C5157 /* TOSAccessResCheckin.h */,
+				1910B7E218EBFE47007C5157 /* TOSAccessResCheckin.m */,
+				1910B7E318EBFE47007C5157 /* TOSAccessResCheckinCollection.h */,
+				1910B7E418EBFE47007C5157 /* TOSAccessResCheckinCollection.m */,
+				1910B7E518EBFE47007C5157 /* TOSAccessResCheckinCollectiosn.m */,
+				1910B7E618EBFE47007C5157 /* TOSAccessResCheckinCollectison.h */,
+				1910B7E718EBFE47007C5157 /* TOSAccessResGeneric.h */,
+				1910B7E818EBFE47007C5157 /* TOSAccessResGeneric.m */,
+				1910B7E918EBFE47007C5157 /* TOSAccessResGeocoding.h */,
+				1910B7EA18EBFE47007C5157 /* TOSAccessResGeocoding.m */,
+				1910B7EB18EBFE47007C5157 /* TOSAccessResImage.h */,
+				1910B7EC18EBFE47007C5157 /* TOSAccessResImage.m */,
+				1910B7ED18EBFE47007C5157 /* TOSAccessResPOI.h */,
+				1910B7EE18EBFE47007C5157 /* TOSAccessResPOI.m */,
+				1910B7EF18EBFE47007C5157 /* TOSAccessResPOICategory.h */,
+				1910B7F018EBFE47007C5157 /* TOSAccessResPOICategory.m */,
+				1910B7F118EBFE47007C5157 /* TOSAccessResPOICategoryCollection.h */,
+				1910B7F218EBFE47007C5157 /* TOSAccessResPOICategoryCollection.m */,
+				1910B7F318EBFE47007C5157 /* TOSAccessResPOICollection.h */,
+				1910B7F418EBFE47007C5157 /* TOSAccessResPOICollection.m */,
+				1910B7F518EBFE47007C5157 /* TOSAccessResPOIWarning.h */,
+				1910B7F618EBFE47007C5157 /* TOSAccessResPOIWarning.m */,
+				1910B7F718EBFE47007C5157 /* TOSAccessResPOIWarningCollection.h */,
+				1910B7F818EBFE47007C5157 /* TOSAccessResPOIWarningCollection.m */,
+				1910B7F918EBFE47007C5157 /* TOSAccessResPolygon.h */,
+				1910B7FA18EBFE47007C5157 /* TOSAccessResPolygon.m */,
+				1910B7FB18EBFE47007C5157 /* TOSAccessResPositions.h */,
+				1910B7FC18EBFE47007C5157 /* TOSAccessResPositions.m */,
+				1910B7FD18EBFE47007C5157 /* TOSAccessResPositionsCollection.h */,
+				1910B7FE18EBFE47007C5157 /* TOSAccessResPositionsCollection.m */,
+				1910B7FF18EBFE47007C5157 /* TOSAccessResRules.h */,
+				1910B80018EBFE47007C5157 /* TOSAccessResRules.m */,
+				1910B80118EBFE47007C5157 /* TOSAccessResTrack.h */,
+				1910B80218EBFE47007C5157 /* TOSAccessResTrack.m */,
+				1910B80318EBFE47007C5157 /* TOSAccessResTrackExport.h */,
+				1910B80418EBFE47007C5157 /* TOSAccessResTrackExport.m */,
+				1910B80518EBFE47007C5157 /* TOSAccessResTrackResource.h */,
+				1910B80618EBFE47007C5157 /* TOSAccessResTrackResource.m */,
+				1910B80718EBFE47007C5157 /* TOSAccessResUser.h */,
+				1910B80818EBFE47007C5157 /* TOSAccessResUser.m */,
+				1910B80918EBFE47007C5157 /* TOSAccessResUsersNear.h */,
+				1910B80A18EBFE47007C5157 /* TOSAccessResUsersNear.m */,
+			);
+			path = TOSAccessRes;
+			sourceTree = "<group>";
+		};
+		1910B80B18EBFE47007C5157 /* TOSCheckinOps */ = {
+			isa = PBXGroup;
+			children = (
+				1910B80C18EBFE47007C5157 /* TOS_CheckinOps.h */,
+				1910B80D18EBFE47007C5157 /* TOS_CheckinOps.m */,
+			);
+			path = TOSCheckinOps;
+			sourceTree = "<group>";
+		};
+		1910B80E18EBFE47007C5157 /* TOSExportOps */ = {
+			isa = PBXGroup;
+			children = (
+				1910B80F18EBFE47007C5157 /* TOS_ExportOps.h */,
+				1910B81018EBFE47007C5157 /* TOS_ExportOps.m */,
+				1910B81118EBFE47007C5157 /* TOS_ExportTranslator.h */,
+				1910B81218EBFE47007C5157 /* TOS_ExportTranslator.m */,
+			);
+			path = TOSExportOps;
+			sourceTree = "<group>";
+		};
+		1910B81318EBFE47007C5157 /* TOSImagesOps */ = {
+			isa = PBXGroup;
+			children = (
+				1910B81418EBFE47007C5157 /* TOS_ImagesOps.h */,
+				1910B81518EBFE47007C5157 /* TOS_ImagesOps.m */,
+			);
+			path = TOSImagesOps;
+			sourceTree = "<group>";
+		};
+		1910B81618EBFE47007C5157 /* TOSObjets */ = {
+			isa = PBXGroup;
+			children = (
+				1910B81718EBFE47007C5157 /* TOS_Accreditation.h */,
+				1910B81818EBFE47007C5157 /* TOS_Accreditation.m */,
+				1910B81918EBFE47007C5157 /* TOS_Address.h */,
+				1910B81A18EBFE47007C5157 /* TOS_Address.m */,
+				1910B81B18EBFE47007C5157 /* TOS_Checkin.h */,
+				1910B81C18EBFE47007C5157 /* TOS_Checkin.m */,
+				1910B81D18EBFE47007C5157 /* TOS_CheckinCollection.h */,
+				1910B81E18EBFE47007C5157 /* TOS_CheckinCollection.m */,
+				1910B81F18EBFE47007C5157 /* TOS_GeocodingData.h */,
+				1910B82018EBFE47007C5157 /* TOS_GeocodingData.m */,
+				1910B82118EBFE47007C5157 /* TOS_GeoData.h */,
+				1910B82218EBFE47007C5157 /* TOS_GeoData.m */,
+				1910B82318EBFE47007C5157 /* TOS_Image.h */,
+				1910B82418EBFE47007C5157 /* TOS_Image.m */,
+				1910B82518EBFE47007C5157 /* TOS_Location.h */,
+				1910B82618EBFE47007C5157 /* TOS_Location.m */,
+				1910B82718EBFE47007C5157 /* TOS_POI.h */,
+				1910B82818EBFE47007C5157 /* TOS_POI.m */,
+				1910B82918EBFE47007C5157 /* TOS_POICategory.h */,
+				1910B82A18EBFE47007C5157 /* TOS_POICategory.m */,
+				1910B82B18EBFE47007C5157 /* TOS_POICategoryCollection.h */,
+				1910B82C18EBFE47007C5157 /* TOS_POICategoryCollection.m */,
+				1910B82D18EBFE47007C5157 /* TOS_POICollection.h */,
+				1910B82E18EBFE47007C5157 /* TOS_POICollection.m */,
+				1910B82F18EBFE47007C5157 /* TOS_POIDataWarning.h */,
+				1910B83018EBFE47007C5157 /* TOS_POIDataWarning.m */,
+				1910B83118EBFE47007C5157 /* TOS_POIWarning.h */,
+				1910B83218EBFE47007C5157 /* TOS_POIWarning.m */,
+				1910B83318EBFE47007C5157 /* TOS_POIWarning_Count.h */,
+				1910B83418EBFE47007C5157 /* TOS_POIWarning_Count.m */,
+				1910B83518EBFE47007C5157 /* TOS_POIWarningData.h */,
+				1910B83618EBFE47007C5157 /* TOS_POIWarningData.m */,
+				1910B83718EBFE47007C5157 /* TOS_Position.h */,
+				1910B83818EBFE47007C5157 /* TOS_Position.m */,
+				1910B83918EBFE47007C5157 /* TOS_PositionCollection.h */,
+				1910B83A18EBFE47007C5157 /* TOS_PositionCollection.m */,
+				1910B83B18EBFE47007C5157 /* TOS_PositionType.h */,
+				1910B83C18EBFE47007C5157 /* TOS_PositionType.m */,
+				1910B83D18EBFE47007C5157 /* TOS_Profile.h */,
+				1910B83E18EBFE47007C5157 /* TOS_Profile.m */,
+				1910B83F18EBFE47007C5157 /* TOS_Rule.h */,
+				1910B84018EBFE47007C5157 /* TOS_Rule.m */,
+				1910B84118EBFE47007C5157 /* TOS_Track.h */,
+				1910B84218EBFE47007C5157 /* TOS_Track.m */,
+				1910B84318EBFE47007C5157 /* TOS_TrackResource.h */,
+				1910B84418EBFE47007C5157 /* TOS_TrackResource.m */,
+				1910B84518EBFE47007C5157 /* TOS_User.h */,
+				1910B84618EBFE47007C5157 /* TOS_User.m */,
+				1910B84718EBFE47007C5157 /* TOS_UserIdPosition.h */,
+				1910B84818EBFE47007C5157 /* TOS_UserIdPosition.m */,
+				1910B84918EBFE47007C5157 /* TOS_UserPosition.h */,
+				1910B84A18EBFE47007C5157 /* TOS_UserPosition.m */,
+				1910B84B18EBFE47007C5157 /* TOS_UsersNear.h */,
+				1910B84C18EBFE47007C5157 /* TOS_UsersNear.m */,
+				1910B84D18EBFE47007C5157 /* TOS_ViewportType.h */,
+				1910B84E18EBFE47007C5157 /* TOS_ViewportType.m */,
+				1910B84F18EBFE47007C5157 /* TOS_VisibleDevice.h */,
+				1910B85018EBFE47007C5157 /* TOS_VisibleDevice.m */,
+			);
+			path = TOSObjets;
+			sourceTree = "<group>";
+		};
+		1910B85118EBFE47007C5157 /* TOSPOICategoriesOps */ = {
+			isa = PBXGroup;
+			children = (
+				1910B85218EBFE47007C5157 /* TOS_POICategoriesOps.h */,
+				1910B85318EBFE47007C5157 /* TOS_POICategoriesOps.m */,
+				1910B85418EBFE47007C5157 /* TOS_POICategoriesTranslator.h */,
+				1910B85518EBFE47007C5157 /* TOS_POICategoriesTranslator.m */,
+			);
+			path = TOSPOICategoriesOps;
+			sourceTree = "<group>";
+		};
+		1910B85618EBFE47007C5157 /* TOSPOIOps */ = {
+			isa = PBXGroup;
+			children = (
+				1910B85718EBFE47007C5157 /* TOS_POIOps.h */,
+				1910B85818EBFE47007C5157 /* TOS_POIOps.m */,
+				1910B85918EBFE47007C5157 /* TOS_POITranslator.h */,
+				1910B85A18EBFE47007C5157 /* TOS_POITranslator.m */,
+			);
+			path = TOSPOIOps;
+			sourceTree = "<group>";
+		};
+		1910B85B18EBFE47007C5157 /* TOSPositionsOps */ = {
+			isa = PBXGroup;
+			children = (
+				1910B85C18EBFE47007C5157 /* TOS_PositionsOps.h */,
+				1910B85D18EBFE47007C5157 /* TOS_PositionsOps.m */,
+				1910B85E18EBFE47007C5157 /* TOS_PositionsTranslator.h */,
+				1910B85F18EBFE47007C5157 /* TOS_PositionsTranslator.m */,
+			);
+			path = TOSPositionsOps;
+			sourceTree = "<group>";
+		};
+		1910B86018EBFE47007C5157 /* TOSResourcesOps */ = {
+			isa = PBXGroup;
+			children = (
+				1910B86118EBFE47007C5157 /* TOS_ResourcesOps.h */,
+				1910B86218EBFE47007C5157 /* TOS_ResourcesOps.m */,
+			);
+			path = TOSResourcesOps;
+			sourceTree = "<group>";
+		};
+		1910B86318EBFE47007C5157 /* TOSRulesOps */ = {
+			isa = PBXGroup;
+			children = (
+				1910B86418EBFE47007C5157 /* TOS_RulesOps.h */,
+				1910B86518EBFE47007C5157 /* TOS_RulesOps.m */,
+				1910B86618EBFE47007C5157 /* TOS_RulesTranslator.h */,
+				1910B86718EBFE47007C5157 /* TOS_RulesTranslator.m */,
+			);
+			path = TOSRulesOps;
+			sourceTree = "<group>";
+		};
+		1910B86818EBFE47007C5157 /* TOSTrackOps */ = {
+			isa = PBXGroup;
+			children = (
+				1910B86918EBFE47007C5157 /* TOS_TrackOps.h */,
+				1910B86A18EBFE47007C5157 /* TOS_TrackOps.m */,
+			);
+			path = TOSTrackOps;
+			sourceTree = "<group>";
+		};
+		1910B86B18EBFE47007C5157 /* TOSUsersOps */ = {
+			isa = PBXGroup;
+			children = (
+				1910B86C18EBFE47007C5157 /* TOS_UsersOps.h */,
+				1910B86D18EBFE47007C5157 /* TOS_UsersOps.m */,
+			);
+			path = TOSUsersOps;
+			sourceTree = "<group>";
+		};
+		1910B8E318EBFFAB007C5157 /* SDKtopoosResources */ = {
+			isa = PBXGroup;
+			children = (
+				1910B8E418EBFFAB007C5157 /* Supporting Files */,
+			);
+			path = SDKtopoosResources;
+			sourceTree = "<group>";
+		};
+		1910B8E418EBFFAB007C5157 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1910B8E518EBFFAB007C5157 /* SDKtopoosResources-Info.plist */,
+				1910B8E618EBFFAB007C5157 /* InfoPlist.strings */,
+				1910B8E918EBFFAB007C5157 /* SDKtopoosResources-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19CDAFE518EB1975001C381C = {
+			isa = PBXGroup;
+			children = (
+				1910B79218EBFE47007C5157 /* SDKtopoosLib */,
+				19CDB01718EB198D001C381C /* OtherFiles */,
+				19CDAFF318EB1976001C381C /* SDKTopoos */,
+				19CDB00718EB1976001C381C /* SDKTopoosTests */,
+				1910B8E318EBFFAB007C5157 /* SDKtopoosResources */,
+				19CDAFF018EB1976001C381C /* Frameworks */,
+				19CDAFEF18EB1976001C381C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		19CDAFEF18EB1976001C381C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19CDAFEE18EB1976001C381C /* libSDKTopoos.a */,
+				1910B8E018EBFFAB007C5157 /* SDKtopoosResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19CDAFF018EB1976001C381C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19CDAFF118EB1976001C381C /* Foundation.framework */,
+				19CDAFFF18EB1976001C381C /* XCTest.framework */,
+				19CDB00218EB1976001C381C /* UIKit.framework */,
+				1910B8E118EBFFAB007C5157 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19CDAFF318EB1976001C381C /* SDKTopoos */ = {
+			isa = PBXGroup;
+			children = (
+				1910B8D518EBFF92007C5157 /* LoginController.h */,
+				1910B8D618EBFF92007C5157 /* LoginController.m */,
+				1910B8D718EBFF92007C5157 /* LoginController.xib */,
+				1910B8D818EBFF92007C5157 /* LoginTopoosController.h */,
+				1910B8D918EBFF92007C5157 /* LoginTopoosController.m */,
+				19CDAFF418EB1976001C381C /* Supporting Files */,
+			);
+			path = SDKTopoos;
+			sourceTree = "<group>";
+		};
+		19CDAFF418EB1976001C381C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19CDAFF518EB1976001C381C /* SDKTopoos-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19CDB00718EB1976001C381C /* SDKTopoosTests */ = {
+			isa = PBXGroup;
+			children = (
+				19CDB00D18EB1976001C381C /* SDKTopoosTests.m */,
+				19CDB00818EB1976001C381C /* Supporting Files */,
+			);
+			path = SDKTopoosTests;
+			sourceTree = "<group>";
+		};
+		19CDB00818EB1976001C381C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				19CDB00918EB1976001C381C /* SDKTopoosTests-Info.plist */,
+				19CDB00A18EB1976001C381C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19CDB01718EB198D001C381C /* OtherFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1910B56018EBE9FD007C5157 /* JSON */,
+				19CDB02D18EB19C2001C381C /* UrlParser.h */,
+				19CDB02E18EB19C2001C381C /* UrlParser.m */,
+			);
+			name = OtherFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1910B8DF18EBFFAB007C5157 /* SDKtopoosResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1910B8EA18EBFFAB007C5157 /* Build configuration list for PBXNativeTarget "SDKtopoosResources" */;
+			buildPhases = (
+				1910B8DC18EBFFAB007C5157 /* Sources */,
+				1910B8DD18EBFFAB007C5157 /* Frameworks */,
+				1910B8DE18EBFFAB007C5157 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDKtopoosResources;
+			productName = SDKtopoosResources;
+			productReference = 1910B8E018EBFFAB007C5157 /* SDKtopoosResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		19CDAFED18EB1976001C381C /* SDKTopoos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19CDB01118EB1976001C381C /* Build configuration list for PBXNativeTarget "SDKTopoos" */;
+			buildPhases = (
+				19CDAFEA18EB1976001C381C /* Sources */,
+				19CDAFEB18EB1976001C381C /* Frameworks */,
+				19CDAFEC18EB1976001C381C /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDKTopoos;
+			productName = SDKTopoos;
+			productReference = 19CDAFEE18EB1976001C381C /* libSDKTopoos.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		19CDAFE618EB1975001C381C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = solusoft;
+			};
+			buildConfigurationList = 19CDAFE918EB1975001C381C /* Build configuration list for PBXProject "SDKTopoos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 19CDAFE518EB1975001C381C;
+			productRefGroup = 19CDAFEF18EB1976001C381C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19CDAFED18EB1976001C381C /* SDKTopoos */,
+				1910B8DF18EBFFAB007C5157 /* SDKtopoosResources */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1910B8DE18EBFFAB007C5157 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1910B8E818EBFFAB007C5157 /* InfoPlist.strings in Resources */,
+				1910B8ED18EBFFB8007C5157 /* LoginController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1910B8DC18EBFFAB007C5157 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19CDAFEA18EB1976001C381C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1910B89018EBFE47007C5157 /* TOSAccessOpUsersNear.m in Sources */,
+				1910B8DA18EBFF92007C5157 /* LoginController.m in Sources */,
+				1910B89818EBFE47007C5157 /* TOSAccessResGeocoding.m in Sources */,
+				1910B56E18EBE9FD007C5157 /* NSObject+SBJSON.m in Sources */,
+				1910B8BB18EBFE47007C5157 /* TOS_POIWarning_Count.m in Sources */,
+				1910B87718EBFE47007C5157 /* TOSAccessOpImageUpload.m in Sources */,
+				1910B87F18EBFE47007C5157 /* TOSAccessOpPOISGet_near.m in Sources */,
+				1910B8C618EBFE47007C5157 /* TOS_UserPosition.m in Sources */,
+				1910B8A618EBFE47007C5157 /* TOSAccessResTrackResource.m in Sources */,
+				1910B87818EBFE47007C5157 /* TOSAccessOpPOISAdd.m in Sources */,
+				1910B8CF18EBFE47007C5157 /* TOS_PositionsTranslator.m in Sources */,
+				1910B8B418EBFE47007C5157 /* TOS_Location.m in Sources */,
+				1910B89518EBFE47007C5157 /* TOSAccessResCheckinCollection.m in Sources */,
+				1910B8C018EBFE47007C5157 /* TOS_Profile.m in Sources */,
+				1910B87118EBFE47007C5157 /* TOSAccessOp.m in Sources */,
+				1910B89918EBFE47007C5157 /* TOSAccessResImage.m in Sources */,
+				1910B8AF18EBFE47007C5157 /* TOS_Checkin.m in Sources */,
+				1910B8A418EBFE47007C5157 /* TOSAccessResTrack.m in Sources */,
+				1910B8C418EBFE47007C5157 /* TOS_User.m in Sources */,
+				1910B87018EBFE47007C5157 /* TOSAccessCaller.m in Sources */,
+				1910B8DB18EBFF92007C5157 /* LoginTopoosController.m in Sources */,
+				1910B87918EBFE47007C5157 /* TOSAccessOpPOISCategories.m in Sources */,
+				1910B89418EBFE47007C5157 /* TOSAccessResCheckin.m in Sources */,
+				1910B8A318EBFE47007C5157 /* TOSAccessResRules.m in Sources */,
+				1910B57318EBE9FD007C5157 /* SBJsonWriter.m in Sources */,
+				1910B88C18EBFE47007C5157 /* TOSAccessOpRulesAdd.m in Sources */,
+				1910B8C818EBFE47007C5157 /* TOS_ViewportType.m in Sources */,
+				1910B89318EBFE47007C5157 /* TOSAccessRes.m in Sources */,
+				1910B88818EBFE47007C5157 /* TOSAccessOpPositionsGet_Between.m in Sources */,
+				1910B8AC18EBFE47007C5157 /* TOS_ImagesOps.m in Sources */,
+				1910B87318EBFE47007C5157 /* TOSAccessOpCheckinGet.m in Sources */,
+				1910B8A518EBFE47007C5157 /* TOSAccessResTrackExport.m in Sources */,
+				1910B87D18EBFE47007C5157 /* TOSAccessOpPOISDelete.m in Sources */,
+				1910B86E18EBFE47007C5157 /* Constants.m in Sources */,
+				1910B88418EBFE47007C5157 /* TOSAccessOpPOISWarningDelete.m in Sources */,
+				1910B8CA18EBFE47007C5157 /* TOS_POICategoriesOps.m in Sources */,
+				1910B8BC18EBFE47007C5157 /* TOS_POIWarningData.m in Sources */,
+				1910B87A18EBFE47007C5157 /* TOSAccessOpPOISCategoriesAdd.m in Sources */,
+				1910B8BF18EBFE47007C5157 /* TOS_PositionType.m in Sources */,
+				1910B88718EBFE47007C5157 /* TOSAccessOpPositionsGet.m in Sources */,
+				1910B8B618EBFE47007C5157 /* TOS_POICategory.m in Sources */,
+				1910B8B118EBFE47007C5157 /* TOS_GeocodingData.m in Sources */,
+				19CDB02F18EB19C2001C381C /* UrlParser.m in Sources */,
+				1910B89D18EBFE47007C5157 /* TOSAccessResPOICollection.m in Sources */,
+				1910B8A818EBFE47007C5157 /* TOSAccessResUsersNear.m in Sources */,
+				1910B8AA18EBFE47007C5157 /* TOS_ExportOps.m in Sources */,
+				1910B88F18EBFE47007C5157 /* TOSAccessOpTrackGetLast.m in Sources */,
+				1910B88918EBFE47007C5157 /* TOSAccessOpResource.m in Sources */,
+				1910B8CB18EBFE47007C5157 /* TOS_POICategoriesTranslator.m in Sources */,
+				1910B8B918EBFE47007C5157 /* TOS_POIDataWarning.m in Sources */,
+				1910B88A18EBFE47007C5157 /* TOSAccessOpResourcesGeocode.m in Sources */,
+				1910B57118EBE9FD007C5157 /* SBJsonBase.m in Sources */,
+				1910B89118EBFE47007C5157 /* TOSAccessOpUsersUSRShow.m in Sources */,
+				1910B87518EBFE47007C5157 /* TOSAccessOpCheckinGet_Where.m in Sources */,
+				1910B8B518EBFE47007C5157 /* TOS_POI.m in Sources */,
+				1910B88B18EBFE47007C5157 /* TOSAccessOpResourcesGet_Polygon.m in Sources */,
+				1910B87B18EBFE47007C5157 /* TOSAccessOpPOISCategoriesDelete.m in Sources */,
+				1910B8A918EBFE47007C5157 /* TOS_CheckinOps.m in Sources */,
+				1910B8B718EBFE47007C5157 /* TOS_POICategoryCollection.m in Sources */,
+				1910B8B018EBFE47007C5157 /* TOS_CheckinCollection.m in Sources */,
+				1910B8CE18EBFE47007C5157 /* TOS_PositionsOps.m in Sources */,
+				1910B89E18EBFE47007C5157 /* TOSAccessResPOIWarning.m in Sources */,
+				1910B8B818EBFE47007C5157 /* TOS_POICollection.m in Sources */,
+				1910B8A018EBFE47007C5157 /* TOSAccessResPolygon.m in Sources */,
+				1910B87E18EBFE47007C5157 /* TOSAccessOpPOISGet.m in Sources */,
+				1910B8C518EBFE47007C5157 /* TOS_UserIdPosition.m in Sources */,
+				1910B89B18EBFE47007C5157 /* TOSAccessResPOICategory.m in Sources */,
+				1910B8C118EBFE47007C5157 /* TOS_Rule.m in Sources */,
+				1910B8A718EBFE47007C5157 /* TOSAccessResUser.m in Sources */,
+				1910B88D18EBFE47007C5157 /* TOSAccessOpTrackAdd.m in Sources */,
+				1910B8D018EBFE47007C5157 /* TOS_ResourcesOps.m in Sources */,
+				1910B89618EBFE47007C5157 /* TOSAccessResCheckinCollectiosn.m in Sources */,
+				1910B88E18EBFE47007C5157 /* TOSAccessOpTrackGet.m in Sources */,
+				1910B8AE18EBFE47007C5157 /* TOS_Address.m in Sources */,
+				1910B89A18EBFE47007C5157 /* TOSAccessResPOI.m in Sources */,
+				1910B88018EBFE47007C5157 /* TOSAccessOpPOISGet_where.m in Sources */,
+				1910B8B218EBFE47007C5157 /* TOS_GeoData.m in Sources */,
+				1910B8D318EBFE47007C5157 /* TOS_TrackOps.m in Sources */,
+				1910B8D118EBFE47007C5157 /* TOS_RulesOps.m in Sources */,
+				1910B89718EBFE47007C5157 /* TOSAccessResGeneric.m in Sources */,
+				1910B8D418EBFE47007C5157 /* TOS_UsersOps.m in Sources */,
+				1910B8C318EBFE47007C5157 /* TOS_TrackResource.m in Sources */,
+				1910B8D218EBFE47007C5157 /* TOS_RulesTranslator.m in Sources */,
+				1910B88118EBFE47007C5157 /* TOSAccessOpPOISUpdate.m in Sources */,
+				1910B8B318EBFE47007C5157 /* TOS_Image.m in Sources */,
+				1910B8CC18EBFE47007C5157 /* TOS_POIOps.m in Sources */,
+				1910B88318EBFE47007C5157 /* TOSAccessOpPOISWarningAdd.m in Sources */,
+				1910B87218EBFE47007C5157 /* TOSAccessOpCheckinAdd.m in Sources */,
+				1910B8BE18EBFE47007C5157 /* TOS_PositionCollection.m in Sources */,
+				1910B8A218EBFE47007C5157 /* TOSAccessResPositionsCollection.m in Sources */,
+				1910B57218EBE9FD007C5157 /* SBJsonParser.m in Sources */,
+				1910B88618EBFE47007C5157 /* TOSAccessOpPositionsAdd.m in Sources */,
+				1910B8C218EBFE47007C5157 /* TOS_Track.m in Sources */,
+				1910B8C718EBFE47007C5157 /* TOS_UsersNear.m in Sources */,
+				1910B57018EBE9FD007C5157 /* SBJSON.m in Sources */,
+				1910B8AD18EBFE47007C5157 /* TOS_Accreditation.m in Sources */,
+				1910B8AB18EBFE47007C5157 /* TOS_ExportTranslator.m in Sources */,
+				1910B87C18EBFE47007C5157 /* TOSAccessOpPOISCategoriesUpdate.m in Sources */,
+				1910B8BD18EBFE47007C5157 /* TOS_Position.m in Sources */,
+				1910B8CD18EBFE47007C5157 /* TOS_POITranslator.m in Sources */,
+				1910B8C918EBFE47007C5157 /* TOS_VisibleDevice.m in Sources */,
+				1910B8A118EBFE47007C5157 /* TOSAccessResPositions.m in Sources */,
+				1910B8BA18EBFE47007C5157 /* TOS_POIWarning.m in Sources */,
+				1910B89218EBFE47007C5157 /* TOSAccessOpWebmap.m in Sources */,
+				1910B87618EBFE47007C5157 /* TOSAccessOpExportLayerTrack.m in Sources */,
+				1910B88218EBFE47007C5157 /* TOSAccessOpPOISWarning.m in Sources */,
+				1910B87418EBFE47007C5157 /* TOSAccessOpCheckinGet_Last.m in Sources */,
+				1910B89F18EBFE47007C5157 /* TOSAccessResPOIWarningCollection.m in Sources */,
+				1910B89C18EBFE47007C5157 /* TOSAccessResPOICategoryCollection.m in Sources */,
+				1910B56F18EBE9FD007C5157 /* NSString+SBJSON.m in Sources */,
+				1910B86F18EBFE47007C5157 /* TOS_AccessTokenOAuth.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1910B8E618EBFFAB007C5157 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1910B8E718EBFFAB007C5157 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		19CDB00A18EB1976001C381C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19CDB00B18EB1976001C381C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1910B8EB18EBFFAB007C5157 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SDKtopoosResources/SDKtopoosResources-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SDKtopoosResources/SDKtopoosResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos7.0;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		1910B8EC18EBFFAB007C5157 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SDKtopoosResources/SDKtopoosResources-Prefix.pch";
+				INFOPLIST_FILE = "SDKtopoosResources/SDKtopoosResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos7.0;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		19CDB00F18EB1976001C381C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		19CDB01018EB1976001C381C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		19CDB01218EB1976001C381C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SDKTopoos.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SDKTopoos/SDKTopoos-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		19CDB01318EB1976001C381C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SDKTopoos.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SDKTopoos/SDKTopoos-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1910B8EA18EBFFAB007C5157 /* Build configuration list for PBXNativeTarget "SDKtopoosResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1910B8EB18EBFFAB007C5157 /* Debug */,
+				1910B8EC18EBFFAB007C5157 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19CDAFE918EB1975001C381C /* Build configuration list for PBXProject "SDKTopoos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19CDB00F18EB1976001C381C /* Debug */,
+				19CDB01018EB1976001C381C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		19CDB01118EB1976001C381C /* Build configuration list for PBXNativeTarget "SDKTopoos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19CDB01218EB1976001C381C /* Debug */,
+				19CDB01318EB1976001C381C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 19CDAFE618EB1975001C381C /* Project object */;
+}
