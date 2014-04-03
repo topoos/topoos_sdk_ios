@@ -578,9 +578,6 @@
 		19CDAFF518EB1976001C381C /* SDKTopoos-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDKTopoos-Prefix.pch"; sourceTree = "<group>"; };
 		19CDAFFF18EB1976001C381C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		19CDB00218EB1976001C381C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		19CDB00918EB1976001C381C /* SDKTopoosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SDKTopoosTests-Info.plist"; sourceTree = "<group>"; };
-		19CDB00B18EB1976001C381C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		19CDB00D18EB1976001C381C /* SDKTopoosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDKTopoosTests.m; sourceTree = "<group>"; };
 		19CDB02D18EB19C2001C381C /* UrlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrlParser.h; sourceTree = "<group>"; };
 		19CDB02E18EB19C2001C381C /* UrlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UrlParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -972,7 +969,6 @@
 				1910B79218EBFE47007C5157 /* SDKtopoosLib */,
 				19CDB01718EB198D001C381C /* OtherFiles */,
 				19CDAFF318EB1976001C381C /* SDKTopoos */,
-				19CDB00718EB1976001C381C /* SDKTopoosTests */,
 				1910B8E318EBFFAB007C5157 /* SDKtopoosResources */,
 				19CDAFF018EB1976001C381C /* Frameworks */,
 				19CDAFEF18EB1976001C381C /* Products */,
@@ -1016,24 +1012,6 @@
 			isa = PBXGroup;
 			children = (
 				19CDAFF518EB1976001C381C /* SDKTopoos-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		19CDB00718EB1976001C381C /* SDKTopoosTests */ = {
-			isa = PBXGroup;
-			children = (
-				19CDB00D18EB1976001C381C /* SDKTopoosTests.m */,
-				19CDB00818EB1976001C381C /* Supporting Files */,
-			);
-			path = SDKTopoosTests;
-			sourceTree = "<group>";
-		};
-		19CDB00818EB1976001C381C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				19CDB00918EB1976001C381C /* SDKTopoosTests-Info.plist */,
-				19CDB00A18EB1976001C381C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1257,14 +1235,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				1910B8E718EBFFAB007C5157 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		19CDB00A18EB1976001C381C /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				19CDB00B18EB1976001C381C /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

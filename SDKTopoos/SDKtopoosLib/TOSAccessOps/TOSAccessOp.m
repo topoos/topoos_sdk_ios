@@ -153,7 +153,7 @@
  * @return bool
  */
 -(bool) isValidorNull:(NSString *) param{
-    return param==nil || [self isValid: param];
+    return param==nil || [param isEqualToString:@""] || [self isValid: param];
 }
 -(bool) isValidorNullInt:(int *) param{
     return param==nil || param !=nil;
