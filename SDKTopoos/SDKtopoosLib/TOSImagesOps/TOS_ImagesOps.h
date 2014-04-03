@@ -51,7 +51,7 @@ extern int const SIZE_XXXLARGE_ ;
  * @throws IOException Signals that an I/O exception has occurred.
  * @throws TopoosException the topoos exception
  */
-+(TOS_Image *) ImageUpload: (TOS_AccessTokenOAuth* ) accessTokenPregenerated andFile:(NSData *) file andFilename:(NSString*) filename ;
++(TOS_Image *) ImageUpload: (TOS_AccessTokenOAuth* ) accessTokenPregenerated andFile:(NSData *) file andFilename:(NSString*) filename andPrivacy: (NSString *) privacy;
 
 
 
@@ -66,7 +66,7 @@ extern int const SIZE_XXXLARGE_ ;
  * @throws IOException Signals that an I/O exception has occurred.
  * @throws TopoosException the topoos exception
  */
-+(TOS_Image *) ImageUploadPosition: (TOS_AccessTokenOAuth* ) accessTokenPregenerated  andFile:(NSData *) file andFilename:(NSString*) filename andPosition_id: (int *) position_id ;
++(TOS_Image *) ImageUploadPosition: (TOS_AccessTokenOAuth* ) accessTokenPregenerated  andFile:(NSData *) file andFilename:(NSString*) filename andPosition_id: (int *) position_id andPrivacy: (NSString *) privacy ;
 
 /**
  * Image upload poi.
@@ -80,7 +80,7 @@ extern int const SIZE_XXXLARGE_ ;
  * @throws TopoosException the topoos exception
  */
 
-+(TOS_Image *) ImageUploadPOI: (TOS_AccessTokenOAuth* ) accessTokenPregenerated  andFile:(NSData *) file andFilename:(NSString*) filename andPoi_id: (int *) poi_id ;
++(TOS_Image *) ImageUploadPOI: (TOS_AccessTokenOAuth* ) accessTokenPregenerated  andFile:(NSData *) file andFilename:(NSString*) filename andPoi_id: (int *) poi_id andPrivacy: (NSString *) privacy;
 
 /**
  * Image upload new poi.
@@ -110,7 +110,7 @@ extern int const SIZE_XXXLARGE_ ;
 +(TOS_Image *) ImageUploadNew_POI: (TOS_AccessTokenOAuth* ) accessTokenPregenerated  andFile:(NSData *) file andFilename:(NSString*) filename
                            andLat: (float*) lat andLng: (float*) lng andAccuracy: (float*) accuracy andVaccuracy: (float*) vaccuracy andElevation: (float*) elevation
                     andCategories: (NSMutableArray *) categories andName: (NSString *) name andDesc: (NSString *) desc andAddress: (NSString *) address andCross_street: (NSString *) cross_street
-                          andCity: (NSString *) city andCountry: (NSString *) country andPostal_code: (NSString *) postal_code andPhone: (NSString *) phone andTwitter: (NSString *) twitter ;
+                          andCity: (NSString *) city andCountry: (NSString *) country andPostal_code: (NSString *) postal_code andPhone: (NSString *) phone andTwitter: (NSString *) twitter andPrivacy: (NSString *) privacy;
 
 
 /**
@@ -121,7 +121,7 @@ extern int const SIZE_XXXLARGE_ ;
  */
 
 
-+(NSString *) GetImageURI:(NSString *) filename_unique ;
++(NSString *) GetImageURI:(NSString *) filename_unique andToken: (TOS_AccessTokenOAuth* ) accessTokenPregenerated ;
 
 /**
  * Gets the image uri thumb.
@@ -130,6 +130,6 @@ extern int const SIZE_XXXLARGE_ ;
  * @param size the size
  * @return the string
  */
-+ (NSString *)  GetImageURIThumb: (NSString *) filename_unique  andSize:(int) size ;
++ (NSString *)  GetImageURIThumb: (NSString *) filename_unique  andSize:(int) size andToken: (TOS_AccessTokenOAuth* ) accessTokenPregenerated ;
 
 @end

@@ -57,7 +57,7 @@ int versionImage = 1;
  * @throws IOException Signals that an I/O exception has occurred.
  * @throws TopoosException the topoos exception
  */
-+(TOS_Image *) ImageUpload: (TOS_AccessTokenOAuth* ) accessTokenPregenerated andFile:(NSData *) file andFilename:(NSString*) filename {
++(TOS_Image *) ImageUpload: (TOS_AccessTokenOAuth* ) accessTokenPregenerated andFile:(NSData *) file andFilename:(NSString*) filename andPrivacy: (NSString *) privacy{
     TOS_Image * image=nil;
     
     if([accessTokenPregenerated isValid]){
@@ -73,6 +73,8 @@ int versionImage = 1;
             NSMutableDictionary* _params = [[NSMutableDictionary alloc] init];
             //[_params setObject:@"1.0" forKey:@"ver"];
             [_params setObject:filename forKey:@"filename"];
+            if (privacy != NULL)
+                [_params setObject:privacy forKey:@"privacy"];
             [_params setObject:[accessTokenPregenerated getAccessToken] forKey:@"oauth_token"];
             //[_params setObject:[NSString stringWithFormat:@"%d", userId] forKey:[NSString stringWithString:@"userId"]];
             //[_params setObject:[NSString stringWithFormat:@"%@",title] forKey:[NSString stringWithString:@"title"]];
@@ -160,7 +162,7 @@ int versionImage = 1;
  * @throws IOException Signals that an I/O exception has occurred.
  * @throws TopoosException the topoos exception
  */
-+(TOS_Image *) ImageUploadPosition: (TOS_AccessTokenOAuth* ) accessTokenPregenerated  andFile:(NSData *) file andFilename:(NSString*) filename andPosition_id: (int *) position_id {
++(TOS_Image *) ImageUploadPosition: (TOS_AccessTokenOAuth* ) accessTokenPregenerated  andFile:(NSData *) file andFilename:(NSString*) filename andPosition_id: (int *) position_id andPrivacy: (NSString *) privacy{
     TOS_Image * image=nil;
     
     if([accessTokenPregenerated isValid]){
@@ -176,6 +178,9 @@ int versionImage = 1;
             NSMutableDictionary* _params = [[NSMutableDictionary alloc] init];
             //[_params setObject:@"1.0" forKey:@"ver"];
             [_params setObject:filename forKey:@"filename"];
+            if (privacy != NULL)
+                [_params setObject:privacy forKey:@"privacy"];
+
             [_params setObject:[accessTokenPregenerated getAccessToken] forKey:@"oauth_token"];
             [_params setObject:[NSString stringWithFormat:@"%d", *position_id] forKey:@"pos_id"];
             //[_params setObject:[NSString stringWithFormat:@"%@",title] forKey:[NSString stringWithString:@"title"]];
@@ -264,7 +269,7 @@ int versionImage = 1;
  * @throws TopoosException the topoos exception
  */
 
-+(TOS_Image *) ImageUploadPOI: (TOS_AccessTokenOAuth* ) accessTokenPregenerated  andFile:(NSData *) file andFilename:(NSString*) filename andPoi_id: (int *) poi_id {
++(TOS_Image *) ImageUploadPOI: (TOS_AccessTokenOAuth* ) accessTokenPregenerated  andFile:(NSData *) file andFilename:(NSString*) filename andPoi_id: (int *) poi_id andPrivacy: (NSString *) privacy{
     TOS_Image * image=nil;
     
     if([accessTokenPregenerated isValid]){
@@ -281,6 +286,9 @@ int versionImage = 1;
             NSMutableDictionary* _params = [[NSMutableDictionary alloc] init];
             //[_params setObject:@"1.0" forKey:@"ver"];
             [_params setObject:filename forKey:@"filename"];
+            
+            if (privacy != NULL)
+                [_params setObject:privacy forKey:@"privacy"];
             [_params setObject:[accessTokenPregenerated getAccessToken] forKey:@"oauth_token"];
             [_params setObject:[NSString stringWithFormat:@"%d", *poi_id] forKey:@"poi_id"];
             //[_params setObject:[NSString stringWithFormat:@"%@",title] forKey:[NSString stringWithString:@"title"]];
@@ -383,7 +391,7 @@ int versionImage = 1;
 +(TOS_Image *) ImageUploadNew_POI: (TOS_AccessTokenOAuth* ) accessTokenPregenerated  andFile:(NSData *) file andFilename:(NSString*) filename
                            andLat: (float*) lat andLng: (float*) lng andAccuracy: (float*) accuracy andVaccuracy: (float*) vaccuracy andElevation: (float*) elevation
                     andCategories: (NSMutableArray *) categories andName: (NSString *) name andDesc: (NSString *) desc andAddress: (NSString *) address andCross_street: (NSString *) cross_street
-                          andCity: (NSString *) city andCountry: (NSString *) country andPostal_code: (NSString *) postal_code andPhone: (NSString *) phone andTwitter: (NSString *) twitter {
+                          andCity: (NSString *) city andCountry: (NSString *) country andPostal_code: (NSString *) postal_code andPhone: (NSString *) phone andTwitter: (NSString *) twitter andPrivacy: (NSString *) privacy{
     TOS_Image * image=nil ;
     
     if([accessTokenPregenerated isValid]){
@@ -410,6 +418,10 @@ int versionImage = 1;
             NSMutableDictionary* _params = [[NSMutableDictionary alloc] init];
             //[_params setObject:@"1.0" forKey:@"ver"];
             [_params setObject:filename forKey:@"filename"];
+            
+            if (privacy != NULL)
+                [_params setObject:privacy forKey:@"privacy"];
+
             [_params setObject:[accessTokenPregenerated getAccessToken] forKey:@"oauth_token"];
             [_params setObject:[NSString stringWithFormat:@"%f", *lat] forKey:@"lat"];
             [_params setObject:[NSString stringWithFormat:@"%f", *lng] forKey:@"lng"];
@@ -532,10 +544,13 @@ int versionImage = 1;
  */
 
 
-+(NSString *) GetImageURI:(NSString *) filename_unique {
++(NSString *) GetImageURI:(NSString *) filename_unique andToken:(TOS_AccessTokenOAuth* ) accessTokenPregenerated{
     NSString *urlString = @"https://pic.topoos.com";
     urlString = [urlString stringByAppendingString:@"/"];
     urlString = [urlString stringByAppendingString:[filename_unique stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding]];
+    if (accessTokenPregenerated != NULL)
+        urlString = [urlString stringByAppendingString:@"?oauth_token="];
+    urlString = [urlString stringByAppendingString:[accessTokenPregenerated getAccessToken]];
     return urlString;
 }
 
@@ -546,7 +561,7 @@ int versionImage = 1;
  * @param size the size
  * @return the string
  */
-+ (NSString *)  GetImageURIThumb: (NSString *) filename_unique  andSize:(int ) size {
++ (NSString *)  GetImageURIThumb: (NSString *) filename_unique  andSize:(int ) size andToken: (TOS_AccessTokenOAuth* ) accessTokenPregenerated{
     NSString * strsize = @"small";
     switch (size) {
 		case SIZE_LARGE_:
@@ -581,6 +596,11 @@ int versionImage = 1;
     urlString = [urlString stringByAppendingString:[filename_unique stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding]];
     urlString = [urlString stringByAppendingString:@"?size="];
     urlString = [urlString stringByAppendingString:[strsize stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding]];
+    if (accessTokenPregenerated != NULL)
+        urlString = [urlString stringByAppendingString:@"&oauth_token="];
+    urlString = [urlString stringByAppendingString:[accessTokenPregenerated getAccessToken]];
+
+   
     return urlString;
 }
 
