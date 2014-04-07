@@ -47,6 +47,7 @@ extern int const SIZE_XXXLARGE_ ;
  * @param file the file
  * @param filename the filename
  * @param accessTokenPregenerated the access token pregenerated
+ * @param privaxy the level of privacy of photo
  * @return the image
  * @throws IOException Signals that an I/O exception has occurred.
  * @throws TopoosException the topoos exception
@@ -62,6 +63,7 @@ extern int const SIZE_XXXLARGE_ ;
  * @param filename the filename
  * @param pos_id the pos_id
  * @param accessTokenPregenerated the access token pregenerated
+ * @param privaxy the level of privacy of photo
  * @return the image
  * @throws IOException Signals that an I/O exception has occurred.
  * @throws TopoosException the topoos exception
@@ -75,6 +77,7 @@ extern int const SIZE_XXXLARGE_ ;
  * @param filename the filename
  * @param poi_id the poi_id
  * @param accessTokenPregenerated the access token pregenerated
+  * @param privaxy the level of privacy of photo
  * @return the image
  * @throws IOException Signals that an I/O exception has occurred.
  * @throws TopoosException the topoos exception
@@ -103,6 +106,7 @@ extern int const SIZE_XXXLARGE_ ;
  * @param twitter the twitter
  * @param categories the categories
  * @param accessTokenPregenerated the access token pregenerated
+ * @param privaxy the level of privacy of photo
  * @return the image
  * @throws IOException Signals that an I/O exception has occurred.
  * @throws TopoosException the topoos exception
