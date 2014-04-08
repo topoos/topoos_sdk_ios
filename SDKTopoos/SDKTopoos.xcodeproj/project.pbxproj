@@ -6,6 +6,22 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		199D030C18F3DECC001C406F /* Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 199D030D18F3DECC001C406F /* Build configuration list for PBXAggregateTarget "Framework" */;
+			buildPhases = (
+				199D031018F3DEE4001C406F /* ShellScript */,
+			);
+			dependencies = (
+				199D031418F3DF00001C406F /* PBXTargetDependency */,
+				199D031218F3DEFE001C406F /* PBXTargetDependency */,
+			);
+			name = Framework;
+			productName = Framework;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		1910B56E18EBE9FD007C5157 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B56318EBE9FD007C5157 /* NSObject+SBJSON.m */; };
 		1910B56F18EBE9FD007C5157 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 1910B56518EBE9FD007C5157 /* NSString+SBJSON.m */; };
@@ -120,230 +136,107 @@
 		1910B8E218EBFFAB007C5157 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1910B8E118EBFFAB007C5157 /* CoreFoundation.framework */; };
 		1910B8E818EBFFAB007C5157 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1910B8E618EBFFAB007C5157 /* InfoPlist.strings */; };
 		1910B8ED18EBFFB8007C5157 /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1910B8D718EBFF92007C5157 /* LoginController.xib */; };
-		1910B8EE18EBFFF5007C5157 /* LoginController.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B8D518EBFF92007C5157 /* LoginController.h */; };
-		1910B8EF18EBFFFB007C5157 /* LoginTopoosController.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B8D818EBFF92007C5157 /* LoginTopoosController.h */; };
-		1910B8F018EC010C007C5157 /* Constants.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B79318EBFE47007C5157 /* Constants.h */; };
-		1910B8F218EC010C007C5157 /* TOS_AccessTokenOAuth.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B79518EBFE47007C5157 /* TOS_AccessTokenOAuth.h */; };
-		1910B8F418EC01D5007C5157 /* TOSAccessCaller.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B79818EBFE47007C5157 /* TOSAccessCaller.h */; };
-		1910B8F518EC01D5007C5157 /* TOSAccessOp.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B79B18EBFE47007C5157 /* TOSAccessOp.h */; };
-		1910B8F618EC01D5007C5157 /* TOSAccessOpCheckinAdd.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B79D18EBFE47007C5157 /* TOSAccessOpCheckinAdd.h */; };
-		1910B8F718EC01D5007C5157 /* TOSAccessOpCheckinGet.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B79F18EBFE47007C5157 /* TOSAccessOpCheckinGet.h */; };
-		1910B8F818EC01D5007C5157 /* TOSAccessOpCheckinGet_Last.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7A118EBFE47007C5157 /* TOSAccessOpCheckinGet_Last.h */; };
-		1910B8F918EC01D5007C5157 /* TOSAccessOpCheckinGet_Where.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7A318EBFE47007C5157 /* TOSAccessOpCheckinGet_Where.h */; };
-		1910B8FA18EC01D5007C5157 /* TOSAccessOpExportLayerTrack.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7A518EBFE47007C5157 /* TOSAccessOpExportLayerTrack.h */; };
-		1910B8FB18EC01D5007C5157 /* TOSAccessOpImageUpload.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7A718EBFE47007C5157 /* TOSAccessOpImageUpload.h */; };
-		1910B8FC18EC01D5007C5157 /* TOSAccessOpPOISAdd.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7A918EBFE47007C5157 /* TOSAccessOpPOISAdd.h */; };
-		1910B8FD18EC01D5007C5157 /* TOSAccessOpPOISCategories.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7AB18EBFE47007C5157 /* TOSAccessOpPOISCategories.h */; };
-		1910B8FE18EC01D5007C5157 /* TOSAccessOpPOISCategoriesAdd.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7AD18EBFE47007C5157 /* TOSAccessOpPOISCategoriesAdd.h */; };
-		1910B8FF18EC01D5007C5157 /* TOSAccessOpPOISCategoriesDelete.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7AF18EBFE47007C5157 /* TOSAccessOpPOISCategoriesDelete.h */; };
-		1910B90018EC01D5007C5157 /* TOSAccessOpPOISCategoriesUpdate.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7B118EBFE47007C5157 /* TOSAccessOpPOISCategoriesUpdate.h */; };
-		1910B90118EC01D5007C5157 /* TOSAccessOpPOISDelete.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7B318EBFE47007C5157 /* TOSAccessOpPOISDelete.h */; };
-		1910B90218EC01D5007C5157 /* TOSAccessOpPOISGet.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7B518EBFE47007C5157 /* TOSAccessOpPOISGet.h */; };
-		1910B90318EC01D5007C5157 /* TOSAccessOpPOISGet_near.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7B718EBFE47007C5157 /* TOSAccessOpPOISGet_near.h */; };
-		1910B90418EC01D5007C5157 /* TOSAccessOpPOISGet_where.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7B918EBFE47007C5157 /* TOSAccessOpPOISGet_where.h */; };
-		1910B90518EC01D5007C5157 /* TOSAccessOpPOISUpdate.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7BB18EBFE47007C5157 /* TOSAccessOpPOISUpdate.h */; };
-		1910B90618EC01D5007C5157 /* TOSAccessOpPOISWarning.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7BD18EBFE47007C5157 /* TOSAccessOpPOISWarning.h */; };
-		1910B90718EC01D5007C5157 /* TOSAccessOpPOISWarningAdd.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7BF18EBFE47007C5157 /* TOSAccessOpPOISWarningAdd.h */; };
-		1910B90818EC01D5007C5157 /* TOSAccessOpPOISWarningDelete.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7C118EBFE47007C5157 /* TOSAccessOpPOISWarningDelete.h */; };
-		1910B90918EC01D5007C5157 /* TOSAccessOpPositionsAdd.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7C418EBFE47007C5157 /* TOSAccessOpPositionsAdd.h */; };
-		1910B90A18EC01D5007C5157 /* TOSAccessOpPositionsGet.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7C618EBFE47007C5157 /* TOSAccessOpPositionsGet.h */; };
-		1910B90B18EC01D5007C5157 /* TOSAccessOpPositionsGet_Between.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7C818EBFE47007C5157 /* TOSAccessOpPositionsGet_Between.h */; };
-		1910B90C18EC01D5007C5157 /* TOSAccessOpResource.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7CA18EBFE47007C5157 /* TOSAccessOpResource.h */; };
-		1910B90D18EC01D5007C5157 /* TOSAccessOpResourcesGeocode.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7CC18EBFE47007C5157 /* TOSAccessOpResourcesGeocode.h */; };
-		1910B90E18EC01D5007C5157 /* TOSAccessOpResourcesGet_Polygon.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7CE18EBFE47007C5157 /* TOSAccessOpResourcesGet_Polygon.h */; };
-		1910B90F18EC01D5007C5157 /* TOSAccessOpRulesAdd.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7D018EBFE47007C5157 /* TOSAccessOpRulesAdd.h */; };
-		1910B91018EC01D5007C5157 /* TOSAccessOpTrackAdd.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7D218EBFE47007C5157 /* TOSAccessOpTrackAdd.h */; };
-		1910B91118EC01D5007C5157 /* TOSAccessOpTrackGet.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7D418EBFE47007C5157 /* TOSAccessOpTrackGet.h */; };
-		1910B91218EC01D5007C5157 /* TOSAccessOpTrackGetLast.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7D618EBFE47007C5157 /* TOSAccessOpTrackGetLast.h */; };
-		1910B91318EC01D5007C5157 /* TOSAccessOpUsersNear.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7D818EBFE47007C5157 /* TOSAccessOpUsersNear.h */; };
-		1910B91418EC01D5007C5157 /* TOSAccessOpUsersUSRShow.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7DA18EBFE47007C5157 /* TOSAccessOpUsersUSRShow.h */; };
-		1910B91518EC01D5007C5157 /* TOSAccessOpWebmap.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7DC18EBFE47007C5157 /* TOSAccessOpWebmap.h */; };
-		1910B91618EC01D5007C5157 /* TOSAccessRes.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7DF18EBFE47007C5157 /* TOSAccessRes.h */; };
-		1910B91718EC01D5007C5157 /* TOSAccessResCheckin.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7E118EBFE47007C5157 /* TOSAccessResCheckin.h */; };
-		1910B91818EC01D5007C5157 /* TOSAccessResCheckinCollection.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7E318EBFE47007C5157 /* TOSAccessResCheckinCollection.h */; };
-		1910B91918EC01D5007C5157 /* TOSAccessResCheckinCollectison.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7E618EBFE47007C5157 /* TOSAccessResCheckinCollectison.h */; };
-		1910B91A18EC01D5007C5157 /* TOSAccessResGeneric.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7E718EBFE47007C5157 /* TOSAccessResGeneric.h */; };
-		1910B91B18EC01D5007C5157 /* TOSAccessResGeocoding.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7E918EBFE47007C5157 /* TOSAccessResGeocoding.h */; };
-		1910B91C18EC01D5007C5157 /* TOSAccessResImage.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7EB18EBFE47007C5157 /* TOSAccessResImage.h */; };
-		1910B91D18EC01D5007C5157 /* TOSAccessResPOI.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7ED18EBFE47007C5157 /* TOSAccessResPOI.h */; };
-		1910B91E18EC01D5007C5157 /* TOSAccessResPOICategory.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7EF18EBFE47007C5157 /* TOSAccessResPOICategory.h */; };
-		1910B91F18EC01D5007C5157 /* TOSAccessResPOICategoryCollection.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7F118EBFE47007C5157 /* TOSAccessResPOICategoryCollection.h */; };
-		1910B92018EC01D5007C5157 /* TOSAccessResPOICollection.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7F318EBFE47007C5157 /* TOSAccessResPOICollection.h */; };
-		1910B92118EC01D5007C5157 /* TOSAccessResPOIWarning.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7F518EBFE47007C5157 /* TOSAccessResPOIWarning.h */; };
-		1910B92218EC01D5007C5157 /* TOSAccessResPOIWarningCollection.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7F718EBFE47007C5157 /* TOSAccessResPOIWarningCollection.h */; };
-		1910B92318EC01D5007C5157 /* TOSAccessResPolygon.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7F918EBFE47007C5157 /* TOSAccessResPolygon.h */; };
-		1910B92418EC01D5007C5157 /* TOSAccessResPositions.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7FB18EBFE47007C5157 /* TOSAccessResPositions.h */; };
-		1910B92518EC01D5007C5157 /* TOSAccessResPositionsCollection.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7FD18EBFE47007C5157 /* TOSAccessResPositionsCollection.h */; };
-		1910B92618EC01D5007C5157 /* TOSAccessResRules.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B7FF18EBFE47007C5157 /* TOSAccessResRules.h */; };
-		1910B92718EC01D5007C5157 /* TOSAccessResTrack.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B80118EBFE47007C5157 /* TOSAccessResTrack.h */; };
-		1910B92818EC01D5007C5157 /* TOSAccessResTrackExport.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B80318EBFE47007C5157 /* TOSAccessResTrackExport.h */; };
-		1910B92918EC01D5007C5157 /* TOSAccessResTrackResource.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B80518EBFE47007C5157 /* TOSAccessResTrackResource.h */; };
-		1910B92A18EC01D5007C5157 /* TOSAccessResUser.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B80718EBFE47007C5157 /* TOSAccessResUser.h */; };
-		1910B92B18EC01D5007C5157 /* TOSAccessResUsersNear.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B80918EBFE47007C5157 /* TOSAccessResUsersNear.h */; };
-		1910B92C18EC01D5007C5157 /* TOS_CheckinOps.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B80C18EBFE47007C5157 /* TOS_CheckinOps.h */; };
-		1910B92D18EC01D5007C5157 /* TOS_ExportOps.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B80F18EBFE47007C5157 /* TOS_ExportOps.h */; };
-		1910B92E18EC01D5007C5157 /* TOS_ExportTranslator.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B81118EBFE47007C5157 /* TOS_ExportTranslator.h */; };
-		1910B92F18EC01D5007C5157 /* TOS_ImagesOps.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B81418EBFE47007C5157 /* TOS_ImagesOps.h */; };
-		1910B93018EC01D5007C5157 /* TOS_Accreditation.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B81718EBFE47007C5157 /* TOS_Accreditation.h */; };
-		1910B93118EC01D5007C5157 /* TOS_Address.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B81918EBFE47007C5157 /* TOS_Address.h */; };
-		1910B93218EC01D5007C5157 /* TOS_Checkin.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B81B18EBFE47007C5157 /* TOS_Checkin.h */; };
-		1910B93318EC01D5007C5157 /* TOS_CheckinCollection.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B81D18EBFE47007C5157 /* TOS_CheckinCollection.h */; };
-		1910B93418EC01D5007C5157 /* TOS_GeocodingData.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B81F18EBFE47007C5157 /* TOS_GeocodingData.h */; };
-		1910B93518EC01D5007C5157 /* TOS_GeoData.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B82118EBFE47007C5157 /* TOS_GeoData.h */; };
-		1910B93618EC01D5007C5157 /* TOS_Image.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B82318EBFE47007C5157 /* TOS_Image.h */; };
-		1910B93718EC01D5007C5157 /* TOS_Location.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B82518EBFE47007C5157 /* TOS_Location.h */; };
-		1910B93818EC01D5007C5157 /* TOS_POI.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B82718EBFE47007C5157 /* TOS_POI.h */; };
-		1910B93918EC01D5007C5157 /* TOS_POICategory.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B82918EBFE47007C5157 /* TOS_POICategory.h */; };
-		1910B93A18EC01D5007C5157 /* TOS_POICategoryCollection.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B82B18EBFE47007C5157 /* TOS_POICategoryCollection.h */; };
-		1910B93B18EC01D5007C5157 /* TOS_POICollection.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B82D18EBFE47007C5157 /* TOS_POICollection.h */; };
-		1910B93C18EC01D5007C5157 /* TOS_POIDataWarning.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B82F18EBFE47007C5157 /* TOS_POIDataWarning.h */; };
-		1910B93D18EC01D5007C5157 /* TOS_POIWarning.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B83118EBFE47007C5157 /* TOS_POIWarning.h */; };
-		1910B93E18EC01D5007C5157 /* TOS_POIWarning_Count.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B83318EBFE47007C5157 /* TOS_POIWarning_Count.h */; };
-		1910B93F18EC01D5007C5157 /* TOS_POIWarningData.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B83518EBFE47007C5157 /* TOS_POIWarningData.h */; };
-		1910B94018EC01D5007C5157 /* TOS_Position.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B83718EBFE47007C5157 /* TOS_Position.h */; };
-		1910B94118EC01D5007C5157 /* TOS_PositionCollection.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B83918EBFE47007C5157 /* TOS_PositionCollection.h */; };
-		1910B94218EC01D5007C5157 /* TOS_PositionType.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B83B18EBFE47007C5157 /* TOS_PositionType.h */; };
-		1910B94318EC01D5007C5157 /* TOS_Profile.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B83D18EBFE47007C5157 /* TOS_Profile.h */; };
-		1910B94418EC01D5007C5157 /* TOS_Rule.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B83F18EBFE47007C5157 /* TOS_Rule.h */; };
-		1910B94518EC01D5007C5157 /* TOS_Track.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B84118EBFE47007C5157 /* TOS_Track.h */; };
-		1910B94618EC01D5007C5157 /* TOS_TrackResource.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B84318EBFE47007C5157 /* TOS_TrackResource.h */; };
-		1910B94718EC01D5007C5157 /* TOS_User.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B84518EBFE47007C5157 /* TOS_User.h */; };
-		1910B94818EC01D5007C5157 /* TOS_UserIdPosition.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B84718EBFE47007C5157 /* TOS_UserIdPosition.h */; };
-		1910B94918EC01D5007C5157 /* TOS_UserPosition.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B84918EBFE47007C5157 /* TOS_UserPosition.h */; };
-		1910B94A18EC01D5007C5157 /* TOS_UsersNear.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B84B18EBFE47007C5157 /* TOS_UsersNear.h */; };
-		1910B94B18EC01D5007C5157 /* TOS_ViewportType.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B84D18EBFE47007C5157 /* TOS_ViewportType.h */; };
-		1910B94C18EC01D5007C5157 /* TOS_VisibleDevice.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B84F18EBFE47007C5157 /* TOS_VisibleDevice.h */; };
-		1910B94D18EC01D5007C5157 /* TOS_POICategoriesOps.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B85218EBFE47007C5157 /* TOS_POICategoriesOps.h */; };
-		1910B94E18EC01D5007C5157 /* TOS_POICategoriesTranslator.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B85418EBFE47007C5157 /* TOS_POICategoriesTranslator.h */; };
-		1910B94F18EC01D5007C5157 /* TOS_POIOps.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B85718EBFE47007C5157 /* TOS_POIOps.h */; };
-		1910B95018EC01D5007C5157 /* TOS_POITranslator.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B85918EBFE47007C5157 /* TOS_POITranslator.h */; };
-		1910B95118EC01D5007C5157 /* TOS_PositionsOps.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B85C18EBFE47007C5157 /* TOS_PositionsOps.h */; };
-		1910B95218EC01D5007C5157 /* TOS_PositionsTranslator.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B85E18EBFE47007C5157 /* TOS_PositionsTranslator.h */; };
-		1910B95318EC01D5007C5157 /* TOS_ResourcesOps.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B86118EBFE47007C5157 /* TOS_ResourcesOps.h */; };
-		1910B95418EC01D5007C5157 /* TOS_RulesOps.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B86418EBFE47007C5157 /* TOS_RulesOps.h */; };
-		1910B95518EC01D5007C5157 /* TOS_RulesTranslator.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B86618EBFE47007C5157 /* TOS_RulesTranslator.h */; };
-		1910B95618EC01D5007C5157 /* TOS_TrackOps.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B86918EBFE47007C5157 /* TOS_TrackOps.h */; };
-		1910B95718EC01D5007C5157 /* TOS_UsersOps.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 1910B86C18EBFE47007C5157 /* TOS_UsersOps.h */; };
+		199D02BB18F3DD43001C406F /* TOS_AccessTokenOAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B79518EBFE47007C5157 /* TOS_AccessTokenOAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02BC18F3DD46001C406F /* TOSAccessCaller.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B79818EBFE47007C5157 /* TOSAccessCaller.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02BD18F3DD49001C406F /* TOSAccessOp.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B79B18EBFE47007C5157 /* TOSAccessOp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02BE18F3DDCD001C406F /* TOSAccessOpCheckinAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B79D18EBFE47007C5157 /* TOSAccessOpCheckinAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02BF18F3DDCD001C406F /* TOSAccessOpCheckinGet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B79F18EBFE47007C5157 /* TOSAccessOpCheckinGet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02C018F3DDCD001C406F /* TOSAccessOpCheckinGet_Last.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7A118EBFE47007C5157 /* TOSAccessOpCheckinGet_Last.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02C118F3DDCD001C406F /* TOSAccessOpCheckinGet_Where.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7A318EBFE47007C5157 /* TOSAccessOpCheckinGet_Where.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02C218F3DDCD001C406F /* TOSAccessOpExportLayerTrack.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7A518EBFE47007C5157 /* TOSAccessOpExportLayerTrack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02C318F3DDCD001C406F /* TOSAccessOpImageUpload.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7A718EBFE47007C5157 /* TOSAccessOpImageUpload.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02C418F3DDCD001C406F /* TOSAccessOpPOISAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7A918EBFE47007C5157 /* TOSAccessOpPOISAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02C518F3DDCD001C406F /* TOSAccessOpPOISCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7AB18EBFE47007C5157 /* TOSAccessOpPOISCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02C618F3DDCD001C406F /* TOSAccessOpPOISCategoriesAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7AD18EBFE47007C5157 /* TOSAccessOpPOISCategoriesAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02C718F3DDCD001C406F /* TOSAccessOpPOISCategoriesDelete.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7AF18EBFE47007C5157 /* TOSAccessOpPOISCategoriesDelete.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02C818F3DDCD001C406F /* TOSAccessOpPOISCategoriesUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7B118EBFE47007C5157 /* TOSAccessOpPOISCategoriesUpdate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02C918F3DDCD001C406F /* TOSAccessOpPOISDelete.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7B318EBFE47007C5157 /* TOSAccessOpPOISDelete.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02CA18F3DDCD001C406F /* TOSAccessOpPOISGet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7B518EBFE47007C5157 /* TOSAccessOpPOISGet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02CB18F3DDCD001C406F /* TOSAccessOpPOISGet_near.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7B718EBFE47007C5157 /* TOSAccessOpPOISGet_near.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02CC18F3DDCD001C406F /* TOSAccessOpPOISGet_where.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7B918EBFE47007C5157 /* TOSAccessOpPOISGet_where.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02CD18F3DDCD001C406F /* TOSAccessOpPOISUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7BB18EBFE47007C5157 /* TOSAccessOpPOISUpdate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02CE18F3DDCD001C406F /* TOSAccessOpPOISWarning.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7BD18EBFE47007C5157 /* TOSAccessOpPOISWarning.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02CF18F3DDCD001C406F /* TOSAccessOpPOISWarningAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7BF18EBFE47007C5157 /* TOSAccessOpPOISWarningAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02D018F3DDCD001C406F /* TOSAccessOpPOISWarningDelete.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7C118EBFE47007C5157 /* TOSAccessOpPOISWarningDelete.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02D118F3DDCD001C406F /* TOSAccessOpPositionsAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7C418EBFE47007C5157 /* TOSAccessOpPositionsAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02D218F3DDCD001C406F /* TOSAccessOpPositionsGet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7C618EBFE47007C5157 /* TOSAccessOpPositionsGet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02D318F3DDCD001C406F /* TOSAccessOpPositionsGet_Between.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7C818EBFE47007C5157 /* TOSAccessOpPositionsGet_Between.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02D418F3DDCD001C406F /* TOSAccessOpResource.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7CA18EBFE47007C5157 /* TOSAccessOpResource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02D518F3DDCD001C406F /* TOSAccessOpResourcesGeocode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7CC18EBFE47007C5157 /* TOSAccessOpResourcesGeocode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02D618F3DDCD001C406F /* TOSAccessOpResourcesGet_Polygon.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7CE18EBFE47007C5157 /* TOSAccessOpResourcesGet_Polygon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02D718F3DDCD001C406F /* TOSAccessOpRulesAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7D018EBFE47007C5157 /* TOSAccessOpRulesAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02D818F3DDCD001C406F /* TOSAccessOpTrackAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7D218EBFE47007C5157 /* TOSAccessOpTrackAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02D918F3DDCD001C406F /* TOSAccessOpTrackGet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7D418EBFE47007C5157 /* TOSAccessOpTrackGet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02DA18F3DDCD001C406F /* TOSAccessOpTrackGetLast.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7D618EBFE47007C5157 /* TOSAccessOpTrackGetLast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02DB18F3DDCD001C406F /* TOSAccessOpUsersNear.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7D818EBFE47007C5157 /* TOSAccessOpUsersNear.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02DC18F3DDCD001C406F /* TOSAccessOpUsersUSRShow.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7DA18EBFE47007C5157 /* TOSAccessOpUsersUSRShow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02DD18F3DDCD001C406F /* TOSAccessOpWebmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B7DC18EBFE47007C5157 /* TOSAccessOpWebmap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02DE18F3DDCD001C406F /* TOS_CheckinOps.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B80C18EBFE47007C5157 /* TOS_CheckinOps.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02DF18F3DDCD001C406F /* TOS_ExportOps.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B80F18EBFE47007C5157 /* TOS_ExportOps.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02E018F3DDCD001C406F /* TOS_ExportTranslator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B81118EBFE47007C5157 /* TOS_ExportTranslator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02E118F3DDCD001C406F /* TOS_Accreditation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B81718EBFE47007C5157 /* TOS_Accreditation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02E218F3DDCD001C406F /* TOS_Address.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B81918EBFE47007C5157 /* TOS_Address.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02E318F3DDCD001C406F /* TOS_Checkin.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B81B18EBFE47007C5157 /* TOS_Checkin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02E418F3DDCD001C406F /* TOS_CheckinCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B81D18EBFE47007C5157 /* TOS_CheckinCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02E518F3DDCD001C406F /* TOS_GeocodingData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B81F18EBFE47007C5157 /* TOS_GeocodingData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02E618F3DDCD001C406F /* TOS_GeoData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B82118EBFE47007C5157 /* TOS_GeoData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02E718F3DDCD001C406F /* TOS_Image.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B82318EBFE47007C5157 /* TOS_Image.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02E818F3DDCD001C406F /* TOS_Location.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B82518EBFE47007C5157 /* TOS_Location.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02E918F3DDCD001C406F /* TOS_POI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B82718EBFE47007C5157 /* TOS_POI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02EA18F3DDCD001C406F /* TOS_POICategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B82918EBFE47007C5157 /* TOS_POICategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02EB18F3DDCD001C406F /* TOS_POICategoryCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B82B18EBFE47007C5157 /* TOS_POICategoryCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02EC18F3DDCD001C406F /* TOS_POICollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B82D18EBFE47007C5157 /* TOS_POICollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02ED18F3DDCD001C406F /* TOS_POIDataWarning.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B82F18EBFE47007C5157 /* TOS_POIDataWarning.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02EE18F3DDCD001C406F /* TOS_POIWarning.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B83118EBFE47007C5157 /* TOS_POIWarning.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02EF18F3DDCD001C406F /* TOS_POIWarning_Count.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B83318EBFE47007C5157 /* TOS_POIWarning_Count.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02F018F3DDCD001C406F /* TOS_POIWarningData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B83518EBFE47007C5157 /* TOS_POIWarningData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02F118F3DDCD001C406F /* TOS_Position.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B83718EBFE47007C5157 /* TOS_Position.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02F218F3DDCD001C406F /* TOS_PositionCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B83918EBFE47007C5157 /* TOS_PositionCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02F318F3DDCD001C406F /* TOS_PositionType.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B83B18EBFE47007C5157 /* TOS_PositionType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02F418F3DDCD001C406F /* TOS_Profile.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B83D18EBFE47007C5157 /* TOS_Profile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02F518F3DDCD001C406F /* TOS_Rule.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B83F18EBFE47007C5157 /* TOS_Rule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02F618F3DDCD001C406F /* TOS_Track.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B84118EBFE47007C5157 /* TOS_Track.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02F718F3DDCD001C406F /* TOS_TrackResource.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B84318EBFE47007C5157 /* TOS_TrackResource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02F818F3DDCD001C406F /* TOS_User.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B84518EBFE47007C5157 /* TOS_User.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02F918F3DDCD001C406F /* TOS_UserIdPosition.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B84718EBFE47007C5157 /* TOS_UserIdPosition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02FA18F3DDCD001C406F /* TOS_UserPosition.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B84918EBFE47007C5157 /* TOS_UserPosition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02FB18F3DDCD001C406F /* TOS_UsersNear.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B84B18EBFE47007C5157 /* TOS_UsersNear.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02FC18F3DDCD001C406F /* TOS_ViewportType.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B84D18EBFE47007C5157 /* TOS_ViewportType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02FD18F3DDCD001C406F /* TOS_VisibleDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B84F18EBFE47007C5157 /* TOS_VisibleDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02FE18F3DDCD001C406F /* TOS_POICategoriesOps.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B85218EBFE47007C5157 /* TOS_POICategoriesOps.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D02FF18F3DDCD001C406F /* TOS_POICategoriesTranslator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B85418EBFE47007C5157 /* TOS_POICategoriesTranslator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D030018F3DDCD001C406F /* TOS_POIOps.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B85718EBFE47007C5157 /* TOS_POIOps.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D030118F3DDCD001C406F /* TOS_POITranslator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B85918EBFE47007C5157 /* TOS_POITranslator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D030218F3DDCD001C406F /* TOS_PositionsOps.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B85C18EBFE47007C5157 /* TOS_PositionsOps.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D030318F3DDCD001C406F /* TOS_PositionsTranslator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B85E18EBFE47007C5157 /* TOS_PositionsTranslator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D030418F3DDCD001C406F /* TOS_ResourcesOps.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B86118EBFE47007C5157 /* TOS_ResourcesOps.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D030518F3DDCD001C406F /* TOS_RulesOps.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B86418EBFE47007C5157 /* TOS_RulesOps.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D030618F3DDCD001C406F /* TOS_RulesTranslator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B86618EBFE47007C5157 /* TOS_RulesTranslator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D030718F3DDCD001C406F /* TOS_TrackOps.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B86918EBFE47007C5157 /* TOS_TrackOps.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D030818F3DDCD001C406F /* TOS_UsersOps.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B86C18EBFE47007C5157 /* TOS_UsersOps.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D030918F3DDCD001C406F /* LoginController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B8D518EBFF92007C5157 /* LoginController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D030A18F3DDCD001C406F /* LoginTopoosController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B8D818EBFF92007C5157 /* LoginTopoosController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		199D031818F3E10D001C406F /* TOS_ImagesOps.h in Headers */ = {isa = PBXBuildFile; fileRef = 1910B81418EBFE47007C5157 /* TOS_ImagesOps.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		19CDAFF218EB1976001C381C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19CDAFF118EB1976001C381C /* Foundation.framework */; };
 		19CDB02F18EB19C2001C381C /* UrlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CDB02E18EB19C2001C381C /* UrlParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		19CDAFEC18EB1976001C381C /* Copy Files */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = include;
-			dstSubfolderSpec = 16;
-			files = (
-				1910B8F418EC01D5007C5157 /* TOSAccessCaller.h in Copy Files */,
-				1910B8F518EC01D5007C5157 /* TOSAccessOp.h in Copy Files */,
-				1910B8F618EC01D5007C5157 /* TOSAccessOpCheckinAdd.h in Copy Files */,
-				1910B8F718EC01D5007C5157 /* TOSAccessOpCheckinGet.h in Copy Files */,
-				1910B8F818EC01D5007C5157 /* TOSAccessOpCheckinGet_Last.h in Copy Files */,
-				1910B8F918EC01D5007C5157 /* TOSAccessOpCheckinGet_Where.h in Copy Files */,
-				1910B8FA18EC01D5007C5157 /* TOSAccessOpExportLayerTrack.h in Copy Files */,
-				1910B8FB18EC01D5007C5157 /* TOSAccessOpImageUpload.h in Copy Files */,
-				1910B8FC18EC01D5007C5157 /* TOSAccessOpPOISAdd.h in Copy Files */,
-				1910B8FD18EC01D5007C5157 /* TOSAccessOpPOISCategories.h in Copy Files */,
-				1910B8FE18EC01D5007C5157 /* TOSAccessOpPOISCategoriesAdd.h in Copy Files */,
-				1910B8FF18EC01D5007C5157 /* TOSAccessOpPOISCategoriesDelete.h in Copy Files */,
-				1910B90018EC01D5007C5157 /* TOSAccessOpPOISCategoriesUpdate.h in Copy Files */,
-				1910B90118EC01D5007C5157 /* TOSAccessOpPOISDelete.h in Copy Files */,
-				1910B90218EC01D5007C5157 /* TOSAccessOpPOISGet.h in Copy Files */,
-				1910B90318EC01D5007C5157 /* TOSAccessOpPOISGet_near.h in Copy Files */,
-				1910B90418EC01D5007C5157 /* TOSAccessOpPOISGet_where.h in Copy Files */,
-				1910B90518EC01D5007C5157 /* TOSAccessOpPOISUpdate.h in Copy Files */,
-				1910B90618EC01D5007C5157 /* TOSAccessOpPOISWarning.h in Copy Files */,
-				1910B90718EC01D5007C5157 /* TOSAccessOpPOISWarningAdd.h in Copy Files */,
-				1910B90818EC01D5007C5157 /* TOSAccessOpPOISWarningDelete.h in Copy Files */,
-				1910B90918EC01D5007C5157 /* TOSAccessOpPositionsAdd.h in Copy Files */,
-				1910B90A18EC01D5007C5157 /* TOSAccessOpPositionsGet.h in Copy Files */,
-				1910B90B18EC01D5007C5157 /* TOSAccessOpPositionsGet_Between.h in Copy Files */,
-				1910B90C18EC01D5007C5157 /* TOSAccessOpResource.h in Copy Files */,
-				1910B90D18EC01D5007C5157 /* TOSAccessOpResourcesGeocode.h in Copy Files */,
-				1910B90E18EC01D5007C5157 /* TOSAccessOpResourcesGet_Polygon.h in Copy Files */,
-				1910B90F18EC01D5007C5157 /* TOSAccessOpRulesAdd.h in Copy Files */,
-				1910B91018EC01D5007C5157 /* TOSAccessOpTrackAdd.h in Copy Files */,
-				1910B91118EC01D5007C5157 /* TOSAccessOpTrackGet.h in Copy Files */,
-				1910B91218EC01D5007C5157 /* TOSAccessOpTrackGetLast.h in Copy Files */,
-				1910B91318EC01D5007C5157 /* TOSAccessOpUsersNear.h in Copy Files */,
-				1910B91418EC01D5007C5157 /* TOSAccessOpUsersUSRShow.h in Copy Files */,
-				1910B91518EC01D5007C5157 /* TOSAccessOpWebmap.h in Copy Files */,
-				1910B91618EC01D5007C5157 /* TOSAccessRes.h in Copy Files */,
-				1910B91718EC01D5007C5157 /* TOSAccessResCheckin.h in Copy Files */,
-				1910B91818EC01D5007C5157 /* TOSAccessResCheckinCollection.h in Copy Files */,
-				1910B91918EC01D5007C5157 /* TOSAccessResCheckinCollectison.h in Copy Files */,
-				1910B91A18EC01D5007C5157 /* TOSAccessResGeneric.h in Copy Files */,
-				1910B91B18EC01D5007C5157 /* TOSAccessResGeocoding.h in Copy Files */,
-				1910B91C18EC01D5007C5157 /* TOSAccessResImage.h in Copy Files */,
-				1910B91D18EC01D5007C5157 /* TOSAccessResPOI.h in Copy Files */,
-				1910B91E18EC01D5007C5157 /* TOSAccessResPOICategory.h in Copy Files */,
-				1910B91F18EC01D5007C5157 /* TOSAccessResPOICategoryCollection.h in Copy Files */,
-				1910B92018EC01D5007C5157 /* TOSAccessResPOICollection.h in Copy Files */,
-				1910B92118EC01D5007C5157 /* TOSAccessResPOIWarning.h in Copy Files */,
-				1910B92218EC01D5007C5157 /* TOSAccessResPOIWarningCollection.h in Copy Files */,
-				1910B92318EC01D5007C5157 /* TOSAccessResPolygon.h in Copy Files */,
-				1910B92418EC01D5007C5157 /* TOSAccessResPositions.h in Copy Files */,
-				1910B92518EC01D5007C5157 /* TOSAccessResPositionsCollection.h in Copy Files */,
-				1910B92618EC01D5007C5157 /* TOSAccessResRules.h in Copy Files */,
-				1910B92718EC01D5007C5157 /* TOSAccessResTrack.h in Copy Files */,
-				1910B92818EC01D5007C5157 /* TOSAccessResTrackExport.h in Copy Files */,
-				1910B92918EC01D5007C5157 /* TOSAccessResTrackResource.h in Copy Files */,
-				1910B92A18EC01D5007C5157 /* TOSAccessResUser.h in Copy Files */,
-				1910B92B18EC01D5007C5157 /* TOSAccessResUsersNear.h in Copy Files */,
-				1910B92C18EC01D5007C5157 /* TOS_CheckinOps.h in Copy Files */,
-				1910B92D18EC01D5007C5157 /* TOS_ExportOps.h in Copy Files */,
-				1910B92E18EC01D5007C5157 /* TOS_ExportTranslator.h in Copy Files */,
-				1910B92F18EC01D5007C5157 /* TOS_ImagesOps.h in Copy Files */,
-				1910B93018EC01D5007C5157 /* TOS_Accreditation.h in Copy Files */,
-				1910B93118EC01D5007C5157 /* TOS_Address.h in Copy Files */,
-				1910B93218EC01D5007C5157 /* TOS_Checkin.h in Copy Files */,
-				1910B93318EC01D5007C5157 /* TOS_CheckinCollection.h in Copy Files */,
-				1910B93418EC01D5007C5157 /* TOS_GeocodingData.h in Copy Files */,
-				1910B93518EC01D5007C5157 /* TOS_GeoData.h in Copy Files */,
-				1910B93618EC01D5007C5157 /* TOS_Image.h in Copy Files */,
-				1910B93718EC01D5007C5157 /* TOS_Location.h in Copy Files */,
-				1910B93818EC01D5007C5157 /* TOS_POI.h in Copy Files */,
-				1910B93918EC01D5007C5157 /* TOS_POICategory.h in Copy Files */,
-				1910B93A18EC01D5007C5157 /* TOS_POICategoryCollection.h in Copy Files */,
-				1910B93B18EC01D5007C5157 /* TOS_POICollection.h in Copy Files */,
-				1910B93C18EC01D5007C5157 /* TOS_POIDataWarning.h in Copy Files */,
-				1910B93D18EC01D5007C5157 /* TOS_POIWarning.h in Copy Files */,
-				1910B93E18EC01D5007C5157 /* TOS_POIWarning_Count.h in Copy Files */,
-				1910B93F18EC01D5007C5157 /* TOS_POIWarningData.h in Copy Files */,
-				1910B94018EC01D5007C5157 /* TOS_Position.h in Copy Files */,
-				1910B94118EC01D5007C5157 /* TOS_PositionCollection.h in Copy Files */,
-				1910B94218EC01D5007C5157 /* TOS_PositionType.h in Copy Files */,
-				1910B94318EC01D5007C5157 /* TOS_Profile.h in Copy Files */,
-				1910B94418EC01D5007C5157 /* TOS_Rule.h in Copy Files */,
-				1910B94518EC01D5007C5157 /* TOS_Track.h in Copy Files */,
-				1910B94618EC01D5007C5157 /* TOS_TrackResource.h in Copy Files */,
-				1910B94718EC01D5007C5157 /* TOS_User.h in Copy Files */,
-				1910B94818EC01D5007C5157 /* TOS_UserIdPosition.h in Copy Files */,
-				1910B94918EC01D5007C5157 /* TOS_UserPosition.h in Copy Files */,
-				1910B94A18EC01D5007C5157 /* TOS_UsersNear.h in Copy Files */,
-				1910B94B18EC01D5007C5157 /* TOS_ViewportType.h in Copy Files */,
-				1910B94C18EC01D5007C5157 /* TOS_VisibleDevice.h in Copy Files */,
-				1910B94D18EC01D5007C5157 /* TOS_POICategoriesOps.h in Copy Files */,
-				1910B94E18EC01D5007C5157 /* TOS_POICategoriesTranslator.h in Copy Files */,
-				1910B94F18EC01D5007C5157 /* TOS_POIOps.h in Copy Files */,
-				1910B95018EC01D5007C5157 /* TOS_POITranslator.h in Copy Files */,
-				1910B95118EC01D5007C5157 /* TOS_PositionsOps.h in Copy Files */,
-				1910B95218EC01D5007C5157 /* TOS_PositionsTranslator.h in Copy Files */,
-				1910B95318EC01D5007C5157 /* TOS_ResourcesOps.h in Copy Files */,
-				1910B95418EC01D5007C5157 /* TOS_RulesOps.h in Copy Files */,
-				1910B95518EC01D5007C5157 /* TOS_RulesTranslator.h in Copy Files */,
-				1910B95618EC01D5007C5157 /* TOS_TrackOps.h in Copy Files */,
-				1910B95718EC01D5007C5157 /* TOS_UsersOps.h in Copy Files */,
-				1910B8F018EC010C007C5157 /* Constants.h in Copy Files */,
-				1910B8F218EC010C007C5157 /* TOS_AccessTokenOAuth.h in Copy Files */,
-				1910B8EE18EBFFF5007C5157 /* LoginController.h in Copy Files */,
-				1910B8EF18EBFFFB007C5157 /* LoginTopoosController.h in Copy Files */,
-			);
-			name = "Copy Files";
-			runOnlyForDeploymentPostprocessing = 0;
+/* Begin PBXContainerItemProxy section */
+		199D031118F3DEFE001C406F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19CDAFE618EB1975001C381C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19CDAFED18EB1976001C381C;
+			remoteInfo = SDKTopoos;
 		};
-/* End PBXCopyFilesBuildPhase section */
+		199D031318F3DF00001C406F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19CDAFE618EB1975001C381C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1910B8DF18EBFFAB007C5157;
+			remoteInfo = SDKtopoosResources;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1910B56118EBE9FD007C5157 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
@@ -1028,6 +921,97 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		199A86C518F2F8820078854C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				199D02BE18F3DDCD001C406F /* TOSAccessOpCheckinAdd.h in Headers */,
+				199D02BF18F3DDCD001C406F /* TOSAccessOpCheckinGet.h in Headers */,
+				199D02C018F3DDCD001C406F /* TOSAccessOpCheckinGet_Last.h in Headers */,
+				199D02C118F3DDCD001C406F /* TOSAccessOpCheckinGet_Where.h in Headers */,
+				199D02C218F3DDCD001C406F /* TOSAccessOpExportLayerTrack.h in Headers */,
+				199D02C318F3DDCD001C406F /* TOSAccessOpImageUpload.h in Headers */,
+				199D02C418F3DDCD001C406F /* TOSAccessOpPOISAdd.h in Headers */,
+				199D02C518F3DDCD001C406F /* TOSAccessOpPOISCategories.h in Headers */,
+				199D02C618F3DDCD001C406F /* TOSAccessOpPOISCategoriesAdd.h in Headers */,
+				199D02C718F3DDCD001C406F /* TOSAccessOpPOISCategoriesDelete.h in Headers */,
+				199D02C818F3DDCD001C406F /* TOSAccessOpPOISCategoriesUpdate.h in Headers */,
+				199D02C918F3DDCD001C406F /* TOSAccessOpPOISDelete.h in Headers */,
+				199D02CA18F3DDCD001C406F /* TOSAccessOpPOISGet.h in Headers */,
+				199D02CB18F3DDCD001C406F /* TOSAccessOpPOISGet_near.h in Headers */,
+				199D02CC18F3DDCD001C406F /* TOSAccessOpPOISGet_where.h in Headers */,
+				199D02CD18F3DDCD001C406F /* TOSAccessOpPOISUpdate.h in Headers */,
+				199D02CE18F3DDCD001C406F /* TOSAccessOpPOISWarning.h in Headers */,
+				199D02CF18F3DDCD001C406F /* TOSAccessOpPOISWarningAdd.h in Headers */,
+				199D02D018F3DDCD001C406F /* TOSAccessOpPOISWarningDelete.h in Headers */,
+				199D02D118F3DDCD001C406F /* TOSAccessOpPositionsAdd.h in Headers */,
+				199D02D218F3DDCD001C406F /* TOSAccessOpPositionsGet.h in Headers */,
+				199D02D318F3DDCD001C406F /* TOSAccessOpPositionsGet_Between.h in Headers */,
+				199D02D418F3DDCD001C406F /* TOSAccessOpResource.h in Headers */,
+				199D02D518F3DDCD001C406F /* TOSAccessOpResourcesGeocode.h in Headers */,
+				199D02D618F3DDCD001C406F /* TOSAccessOpResourcesGet_Polygon.h in Headers */,
+				199D02D718F3DDCD001C406F /* TOSAccessOpRulesAdd.h in Headers */,
+				199D02D818F3DDCD001C406F /* TOSAccessOpTrackAdd.h in Headers */,
+				199D02D918F3DDCD001C406F /* TOSAccessOpTrackGet.h in Headers */,
+				199D02DA18F3DDCD001C406F /* TOSAccessOpTrackGetLast.h in Headers */,
+				199D02DB18F3DDCD001C406F /* TOSAccessOpUsersNear.h in Headers */,
+				199D02DC18F3DDCD001C406F /* TOSAccessOpUsersUSRShow.h in Headers */,
+				199D02DD18F3DDCD001C406F /* TOSAccessOpWebmap.h in Headers */,
+				199D02DE18F3DDCD001C406F /* TOS_CheckinOps.h in Headers */,
+				199D02DF18F3DDCD001C406F /* TOS_ExportOps.h in Headers */,
+				199D02E018F3DDCD001C406F /* TOS_ExportTranslator.h in Headers */,
+				199D02E118F3DDCD001C406F /* TOS_Accreditation.h in Headers */,
+				199D02E218F3DDCD001C406F /* TOS_Address.h in Headers */,
+				199D02E318F3DDCD001C406F /* TOS_Checkin.h in Headers */,
+				199D02E418F3DDCD001C406F /* TOS_CheckinCollection.h in Headers */,
+				199D02E518F3DDCD001C406F /* TOS_GeocodingData.h in Headers */,
+				199D02E618F3DDCD001C406F /* TOS_GeoData.h in Headers */,
+				199D02E718F3DDCD001C406F /* TOS_Image.h in Headers */,
+				199D02E818F3DDCD001C406F /* TOS_Location.h in Headers */,
+				199D02E918F3DDCD001C406F /* TOS_POI.h in Headers */,
+				199D02EA18F3DDCD001C406F /* TOS_POICategory.h in Headers */,
+				199D02EB18F3DDCD001C406F /* TOS_POICategoryCollection.h in Headers */,
+				199D02EC18F3DDCD001C406F /* TOS_POICollection.h in Headers */,
+				199D02ED18F3DDCD001C406F /* TOS_POIDataWarning.h in Headers */,
+				199D02EE18F3DDCD001C406F /* TOS_POIWarning.h in Headers */,
+				199D02EF18F3DDCD001C406F /* TOS_POIWarning_Count.h in Headers */,
+				199D02F018F3DDCD001C406F /* TOS_POIWarningData.h in Headers */,
+				199D02F118F3DDCD001C406F /* TOS_Position.h in Headers */,
+				199D02F218F3DDCD001C406F /* TOS_PositionCollection.h in Headers */,
+				199D02F318F3DDCD001C406F /* TOS_PositionType.h in Headers */,
+				199D031818F3E10D001C406F /* TOS_ImagesOps.h in Headers */,
+				199D02F418F3DDCD001C406F /* TOS_Profile.h in Headers */,
+				199D02F518F3DDCD001C406F /* TOS_Rule.h in Headers */,
+				199D02F618F3DDCD001C406F /* TOS_Track.h in Headers */,
+				199D02F718F3DDCD001C406F /* TOS_TrackResource.h in Headers */,
+				199D02F818F3DDCD001C406F /* TOS_User.h in Headers */,
+				199D02F918F3DDCD001C406F /* TOS_UserIdPosition.h in Headers */,
+				199D02FA18F3DDCD001C406F /* TOS_UserPosition.h in Headers */,
+				199D02FB18F3DDCD001C406F /* TOS_UsersNear.h in Headers */,
+				199D02FC18F3DDCD001C406F /* TOS_ViewportType.h in Headers */,
+				199D02FD18F3DDCD001C406F /* TOS_VisibleDevice.h in Headers */,
+				199D02FE18F3DDCD001C406F /* TOS_POICategoriesOps.h in Headers */,
+				199D02FF18F3DDCD001C406F /* TOS_POICategoriesTranslator.h in Headers */,
+				199D030018F3DDCD001C406F /* TOS_POIOps.h in Headers */,
+				199D030118F3DDCD001C406F /* TOS_POITranslator.h in Headers */,
+				199D030218F3DDCD001C406F /* TOS_PositionsOps.h in Headers */,
+				199D030318F3DDCD001C406F /* TOS_PositionsTranslator.h in Headers */,
+				199D030418F3DDCD001C406F /* TOS_ResourcesOps.h in Headers */,
+				199D030518F3DDCD001C406F /* TOS_RulesOps.h in Headers */,
+				199D030618F3DDCD001C406F /* TOS_RulesTranslator.h in Headers */,
+				199D030718F3DDCD001C406F /* TOS_TrackOps.h in Headers */,
+				199D030818F3DDCD001C406F /* TOS_UsersOps.h in Headers */,
+				199D030918F3DDCD001C406F /* LoginController.h in Headers */,
+				199D030A18F3DDCD001C406F /* LoginTopoosController.h in Headers */,
+				199D02BB18F3DD43001C406F /* TOS_AccessTokenOAuth.h in Headers */,
+				199D02BC18F3DD46001C406F /* TOSAccessCaller.h in Headers */,
+				199D02BD18F3DD49001C406F /* TOSAccessOp.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		1910B8DF18EBFFAB007C5157 /* SDKtopoosResources */ = {
 			isa = PBXNativeTarget;
@@ -1052,7 +1036,8 @@
 			buildPhases = (
 				19CDAFEA18EB1976001C381C /* Sources */,
 				19CDAFEB18EB1976001C381C /* Frameworks */,
-				19CDAFEC18EB1976001C381C /* Copy Files */,
+				199A86C518F2F8820078854C /* Headers */,
+				199D030B18F3DE44001C406F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1086,6 +1071,7 @@
 			targets = (
 				19CDAFED18EB1976001C381C /* SDKTopoos */,
 				1910B8DF18EBFFAB007C5157 /* SDKtopoosResources */,
+				199D030C18F3DECC001C406F /* Framework */,
 			);
 		};
 /* End PBXProject section */
@@ -1101,6 +1087,35 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		199D030B18F3DE44001C406F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n\n# Link the \"Current\" version to \"A\"\n/bin/ln -sfh A \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n";
+		};
+		199D031018F3DEE4001C406F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\nSF_TARGET_NAME=${PROJECT_NAME}\nSF_EXECUTABLE_PATH=\"lib${SF_TARGET_NAME}.a\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\n# The following conditionals come from\n# https://github.com/kstenerud/iOS-Universal-Framework\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nSF_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nSF_OTHER_PLATFORM=iphonesimulator\nelse\nSF_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SF_SDK_PLATFORM$ ]]\nthen\nSF_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}\"\nelse\necho \"Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\n# Build the other platform.\nxcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" $ACTION\n\n# Smash the two static libraries into one fat binary and store it in the .framework\nxcrun lipo -create \"${BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\n# Copy the binary to the other architecture folder to have a complete framework in both.\ncp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1910B8DC18EBFFAB007C5157 /* Sources */ = {
@@ -1230,6 +1245,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		199D031218F3DEFE001C406F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19CDAFED18EB1976001C381C /* SDKTopoos */;
+			targetProxy = 199D031118F3DEFE001C406F /* PBXContainerItemProxy */;
+		};
+		199D031418F3DF00001C406F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1910B8DF18EBFFAB007C5157 /* SDKtopoosResources */;
+			targetProxy = 199D031318F3DF00001C406F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		1910B8E618EBFFAB007C5157 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -1276,6 +1304,20 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos7.0;
 				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		199D030E18F3DECC001C406F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		199D030F18F3DECC001C406F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -1384,6 +1426,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		199D030D18F3DECC001C406F /* Build configuration list for PBXAggregateTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				199D030E18F3DECC001C406F /* Debug */,
+				199D030F18F3DECC001C406F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		19CDAFE918EB1975001C381C /* Build configuration list for PBXProject "SDKTopoos" */ = {
 			isa = XCConfigurationList;
