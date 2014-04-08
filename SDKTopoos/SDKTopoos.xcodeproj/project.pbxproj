@@ -1013,9 +1013,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1910B8DF18EBFFAB007C5157 /* SDKtopoosResources */ = {
+		1910B8DF18EBFFAB007C5157 /* SDKTopoosResources */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1910B8EA18EBFFAB007C5157 /* Build configuration list for PBXNativeTarget "SDKtopoosResources" */;
+			buildConfigurationList = 1910B8EA18EBFFAB007C5157 /* Build configuration list for PBXNativeTarget "SDKTopoosResources" */;
 			buildPhases = (
 				1910B8DC18EBFFAB007C5157 /* Sources */,
 				1910B8DD18EBFFAB007C5157 /* Frameworks */,
@@ -1025,7 +1025,7 @@
 			);
 			dependencies = (
 			);
-			name = SDKtopoosResources;
+			name = SDKTopoosResources;
 			productName = SDKtopoosResources;
 			productReference = 1910B8E018EBFFAB007C5157 /* SDKtopoosResources.bundle */;
 			productType = "com.apple.product-type.bundle";
@@ -1070,7 +1070,7 @@
 			projectRoot = "";
 			targets = (
 				19CDAFED18EB1976001C381C /* SDKTopoos */,
-				1910B8DF18EBFFAB007C5157 /* SDKtopoosResources */,
+				1910B8DF18EBFFAB007C5157 /* SDKTopoosResources */,
 				199D030C18F3DECC001C406F /* Framework */,
 			);
 		};
@@ -1253,7 +1253,7 @@
 		};
 		199D031418F3DF00001C406F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1910B8DF18EBFFAB007C5157 /* SDKtopoosResources */;
+			target = 1910B8DF18EBFFAB007C5157 /* SDKTopoosResources */;
 			targetProxy = 199D031318F3DF00001C406F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1418,7 +1418,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1910B8EA18EBFFAB007C5157 /* Build configuration list for PBXNativeTarget "SDKtopoosResources" */ = {
+		1910B8EA18EBFFAB007C5157 /* Build configuration list for PBXNativeTarget "SDKTopoosResources" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1910B8EB18EBFFAB007C5157 /* Debug */,
