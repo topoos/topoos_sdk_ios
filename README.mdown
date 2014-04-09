@@ -1,0 +1,28 @@
+topoos SDK for iOS
+========================
+
+This open-source library allows you to integrate topoos into your iOS app.
+
+Visit API documentation for developers at http://docs.topoos.com/ if you need to learn more about samples, documentaion, integrating the SDK into your app, etc.
+
+TRY IT OUT
+
+1. Download SDK: clone it from this repository (master branch is stable)
+
+2. How to integrate SDK into your app: http://docs.topoos.com/tools/sdks/ios/guides/including-sdk-in-your-project/
+
+3. Making operation calls: http://docs.topoos.com/tools/sdks/ios/examples/making-operation-calls/
+
+4. topoos oauth login integration: http://docs.topoos.com/tools/sdks/ios/examples/oauth-user-login/
+
+5. topoos documentation (how to start with topoos): http://docs.topoos.com/
+
+LICENSE
+
+Except as otherwise noted, the topoos SDK for iOS is licensed under the Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html).
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the License for the specific language governing permissions and limitations under the License.
+
+DEVELOPER TERMS
+
+By using the topoos SDK for iOS you agree topoos platform License Terms (http://www.topoos.com/legal-notice) and topoos platform Privacy Policy (http://www.topoos.com/privacy-policy).
