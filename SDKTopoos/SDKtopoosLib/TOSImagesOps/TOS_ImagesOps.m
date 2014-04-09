@@ -540,6 +540,7 @@ int versionImage = 1;
  * Gets the image uri.
  *
  * @param filename_unique the filename_unique
+ * @param accessTokenPregenerated
  * @return the string
  */
 
@@ -559,6 +560,7 @@ int versionImage = 1;
  *
  * @param filename_unique the filename_unique
  * @param size the size
+ * @param accessTokenPregenerated
  * @return the string
  */
 + (NSString *)  GetImageURIThumb: (NSString *) filename_unique  andSize:(int ) size andToken: (TOS_AccessTokenOAuth* ) accessTokenPregenerated{
