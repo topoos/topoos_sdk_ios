@@ -19,7 +19,7 @@
  */
 #import <Foundation/Foundation.h>
 
-@interface TOS_Accreditation : NSObject
+@interface TOS_Accreditation : NSObject <NSCoding>
 /** The Expirationtime. */
 @property (nonatomic,retain) NSString * Expirationtime;
 
